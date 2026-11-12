@@ -1,6 +1,7 @@
 import { ArrowRight, Images, Box, Gamepad2, Mountain, TableProperties, PanelsTopLeft } from "lucide-react";
 import background from "../../首页背景.jpg";
 import brandLogo from "../assets/brand-logo.png";
+import { UsageLicense } from './UsageLicense';
 import "./home.css";
 import "./entries.css";
 import './font.css';
@@ -32,7 +33,8 @@ export function HomePage({
         <div className="home-brand">
           <img className="home-brand-logo" src={brandLogo} alt="软件图标" />
         </div>
-        <h1 className="home-title">超时空盒子 开源版</h1>
+        <h1 className="home-title">超时空盒子 免费版</h1>
+        <UsageLicense />
         <div className="home-entry-slot">
           <div className="home-function-view home-function-view-visible">
             <button

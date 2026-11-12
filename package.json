@@ -1,7 +1,7 @@
 {
   "name": "cskhz-open-source",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
@@ -59,6 +59,6 @@
     "vite": "^7.1.0",
     "vitest": "^5.0.3"
   },
-  "license": "GPL-3.0-only",
-  "description": "超时空盒子开源版：图标、模型、UI、地形和物编工具"
+  "license": "SEE LICENSE IN LICENSE",
+  "description": "超时空盒子源码公开免费版：图标、模型、UI、地形和物编工具"
 }

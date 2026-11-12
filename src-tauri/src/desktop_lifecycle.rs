@@ -21,10 +21,10 @@ pub fn initialize(app: &AppHandle) -> tauri::Result<()> {
             }
         });
     }
-    let show = MenuItem::with_id(app, "show", "打开超时空盒子开源版", true, None::<&str>)?;
+    let show = MenuItem::with_id(app, "show", "打开超时空盒子源码公开免费版", true, None::<&str>)?;
     let exit = MenuItem::with_id(app, "exit", "退出软件", true, None::<&str>)?;
     let menu = Menu::with_items(app, &[&show, &exit])?;
-    let mut builder = TrayIconBuilder::with_id("main-tray").tooltip("超时空盒子开源版").menu(&menu).show_menu_on_left_click(false)
+    let mut builder = TrayIconBuilder::with_id("main-tray").tooltip("超时空盒子源码公开免费版").menu(&menu).show_menu_on_left_click(false)
         .on_menu_event(|app, event| match event.id.as_ref() {
             "show" => { let _ = restore(app); }
             "exit" => { let _ = restore(app); let _ = app.emit("app-exit-requested", ()); }
