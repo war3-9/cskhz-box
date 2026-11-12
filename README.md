@@ -21,6 +21,7 @@ Windows 桌面工具，使用 React、TypeScript、Konva、Zustand、Tauri 2 和
 - 魔兽 UI：可视化编辑、设计保存、本地 JASS 与可编辑 T 触发文件导出。
 - 地形克隆、魔兽 UI 替换、物编表格及本地物编文件处理。
 - AI 辅助命名使用用户自行配置的接口，仅在主动使用时请求。
+- 软件外观学习
 
 
 
