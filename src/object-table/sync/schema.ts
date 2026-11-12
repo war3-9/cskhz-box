@@ -1,0 +1,10 @@
+import { z } from 'zod';
+import { validRawcode } from '../native/rawcode';
+import { variableDocumentSchema } from '../variables/document';
+import { variableSchema } from '../variables/model';
+const rawcode = z.string().refine(validRawcode, '无效的四字节物编 ID');
+const field = z.object({ id: rawcode, type: z.number().int().min(0).max(3), level: z.number().int().nonnegative(), data: z.number().int().nonnegative(), value: z.union([z.string(), z.number().finite()]) });
+const object = z.object({ id: rawcode, parent: rawcode, custom: z.boolean(), fields: z.record(z.string(), field) });
+export const snapshotSchema = z.record(z.string(), object);
+export const mapReadSchema = z.object({ path: z.string(), fingerprint: z.string(), objects: snapshotSchema, raw: z.record(z.string(), z.array(z.number().int().min(0).max(255))), strings: z.record(z.string(), z.string()), imports: z.array(z.string()), warnings: z.array(z.string()) });
+export const metadataSchema = z.object({ name: z.string().min(1).max(256), binding: z.object({ id: z.string().min(1), path: z.string(), fingerprint: z.string(), session: z.string().nullable(), realtime: z.boolean(), source: mapReadSchema, baseline: snapshotSchema, revision: z.number().int().nonnegative().optional(), managed: z.record(z.string(), z.array(z.string())).optional() }).optional(), imports: z.array(z.object({ path: z.string(), fingerprint: z.string(), objects: snapshotSchema, local: snapshotSchema, variables: z.object({ rows: z.array(variableSchema).max(4096), local: variableDocumentSchema }).optional() })).max(32).optional() });

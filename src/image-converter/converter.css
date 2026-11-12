@@ -1,0 +1,24 @@
+.image-conversion-dialog {
+  width: min(500px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+}
+.image-conversion-dialog fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.conversion-intro { margin: 0 0 18px; color: var(--text-secondary); font-size: 13px; line-height: 1.6; }
+.conversion-source-actions { display: flex; gap: 10px; margin-bottom: 16px; }
+.conversion-source-actions button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  flex: 1; min-height: 40px; padding: 8px; border: 1px solid var(--line); border-radius: 5px;
+  background: var(--surface-soft); font-size: 13px;
+}
+.conversion-source-actions button:hover:not(:disabled) { color: var(--accent); border-color: var(--accent); }
+.image-conversion-dialog button:disabled { opacity: .45; cursor: default; }
+.conversion-selection { display: grid; gap: 6px; margin-bottom: 16px; color: var(--text-secondary); font-size: 12px; }
+.conversion-path { overflow-wrap: anywhere; user-select: text; }
+.conversion-hint { font-size: 12px; line-height: 1.7; color: var(--muted); }
+.conversion-progress { display: grid; gap: 8px; font-size: 12px; color: var(--accent); overflow-wrap: anywhere; }
+.conversion-progress progress { width: 100%; accent-color: var(--accent); }
+.conversion-result { padding: 22px 18px 18px; font-size: 13px; line-height: 1.7; }
+.conversion-success-icon { color: #1c9a63; }
+.conversion-result details { max-height: 180px; overflow: auto; }
+.conversion-result ul { padding-left: 20px; overflow-wrap: anywhere; }

@@ -1,0 +1,10 @@
+.viewer-context-menu{position:fixed;z-index:50;width:min(290px,calc(100vw - 16px));max-height:calc(100vh - 16px);overflow:auto;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--viewer-text);box-shadow:0 12px 36px #0006}
+.viewer-context-menu>strong{display:block;padding:8px;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}
+.viewer-context-menu>button{display:block;width:100%;padding:9px 10px;border:0;background:transparent;text-align:left;border-radius:4px}
+.viewer-context-menu>button:hover:not(:disabled),.viewer-context-menu>button:focus-visible{background:var(--accent-soft)}
+.viewer-context-menu>hr{border:0;border-top:1px solid var(--line);margin:6px 0}
+.viewer-context-menu>.viewer-context-delete{color:var(--danger)}
+.viewer-context-menu>small{display:block;padding:6px 10px;color:var(--muted)}
+.viewer-category-submenu{z-index:51;width:min(240px,calc(100vw - 16px));max-height:min(400px,calc(100vh - 16px));overscroll-behavior:contain}
+.viewer-category-submenu>button{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.viewer-shell .viewer-category-add{width:30px;height:30px;min-height:30px}

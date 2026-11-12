@@ -1,0 +1,103 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "前端",
+            "type": "lua",
+            "request": "launch",
+            "stopOnEntry": false,
+            "cwd": "${workspaceRoot}\\script\\",
+            "env": {
+                "PATH": "${workspaceRoot}\\bin\\"
+            },
+            "luaexe": "${workspaceRoot}\\bin\\w3x2lni-lua.exe",
+            "path": ".\\?.lua;.\\?\\init.lua",
+            "cpath": "${workspaceRoot}\\bin\\?.dll;",
+            "program": "${workspaceRoot}\\script\\gui\\new\\main.lua"
+        },
+        {
+            "name": "后端",
+            "type": "lua",
+            "request": "launch",
+            "cwd": "${workspaceRoot}\\script\\",
+            "env": {
+                "PATH": "${workspaceRoot}\\bin\\"
+            },
+            "luaexe": "${workspaceRoot}\\bin\\w3x2lni-lua.exe",
+            "path": ".\\?.lua;.\\?\\init.lua",
+            "cpath": "${workspaceRoot}\\bin\\?.dll;",
+            "program": "${workspaceRoot}\\script\\backend\\init.lua",
+            "sourceCoding": "utf8",
+            "stopOnEntry": false,
+            "arg0": [
+                "-e",
+                "_W2L_MODE='CLI';_W2L_DIR=[[${workspaceRoot}]]"
+            ],
+            "arg": [
+                //"lni", "D:/maps/44.w3x"
+                "obj", "D:\\War3Maps\\RWBY 5.2.5_slk_obj\\RWBY 5.2.5_slk.w3x", "D:\\War3Maps\\RWBY 5.2.5_slk_obj\\test_obj.w3x"
+                //"mpq", "E:\\Warcraft III"
+                //"mpq", "D:\\Warcraft III 1.24 CN"
+                //"slk", "D:/maps/55.w3x"
+                //"lni", "D:\\maps\\Dota-Classic.w3x"
+                //"slk", "D:/maps/DotA.w3x"
+                //"slk", "D:\\Github\\Dota-Classic", "D:/maps/slk.w3x"
+                //"slk", "D:\\Github\\Dota-Classic\\output\\M1-editor.w3x", "D:/maps/slk.w3x"
+            ]
+        },
+        {
+            "name": "单元测试",
+            "type": "lua",
+            "request": "launch",
+            "cwd": "${workspaceRoot}\\script\\",
+            "env": {
+                "PATH": "${workspaceRoot}\\bin\\"
+            },
+            "luaexe": "${workspaceRoot}\\bin\\w3x2lni-lua.exe",
+            "path": ".\\?.lua;.\\?\\init.lua",
+            "cpath": "${workspaceRoot}\\bin\\?.dll;",
+            "program": "${workspaceRoot}\\test\\unit_test.lua",
+            "sourceCoding": "utf8",
+            "arg0": [],
+            "arg": []
+        },
+        {
+            "name": "MiniGui",
+            "type": "lua",
+            "request": "launch",
+            "cwd": "${workspaceRoot}\\script\\",
+            "env": {
+                "PATH": "${workspaceRoot}\\bin\\"
+            },
+            "luaexe": "${workspaceRoot}\\bin\\w3x2lni-lua.exe",
+            "path": ".\\?.lua;.\\?\\init.lua",
+            "cpath": "${workspaceRoot}\\bin\\?.dll;",
+            "program": "${workspaceRoot}\\script\\gui\\mini.lua",
+            "sourceCoding": "utf8",
+            "arg": [
+                "lni",
+                "${workspaceRoot}\\2.w3x",
+            ]
+        },
+        {
+            "name": "TestAttach",
+            "type": "lua",
+            "request": "attach",
+            "processName" : "w3x2lni-lua.exe"
+        },
+        {
+            "name": "预处理",
+            "type": "lua",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "PATH": "${workspaceRoot}\\bin\\"
+            },
+            "luaexe": "${workspaceRoot}\\bin\\w3x2lni-lua.exe",
+            "path": ".\\?.lua;.\\?\\init.lua",
+            "cpath": "${workspaceRoot}\\bin\\?.dll;",
+            "program": "${workspaceRoot}\\make\\prebuild.lua",
+            "sourceCoding": "utf8",
+        },
+    ]
+}

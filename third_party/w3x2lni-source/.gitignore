@@ -1,0 +1,13 @@
+/bin
+/build
+/make/zhCN
+/make/enUS
+/make/ci
+/make/luamake/*.dll
+/log
+/script/share/gitlog.lua
+/*.w3x
+/*.exe
+.vscode/.BROWSE.C_CPP.DB
+.vscode/.BROWSE.C_CPP.DB-wal
+.vscode/.BROWSE.C_CPP.DB-shm

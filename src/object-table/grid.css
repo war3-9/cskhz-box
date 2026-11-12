@@ -1,0 +1,54 @@
+.ot-grid-wrap { position:relative; min-height:0; min-width:0; flex:1; display:flex; flex-direction:column; outline:0; }
+.ot-grid-scroll { overflow-y:auto; overflow-x:hidden; min-height:0; flex:1; scrollbar-width:thin; }
+.ot-grid { position:relative; font-size:12px; }
+.ot-grid-header { position:sticky; top:0; display:flex; height:64px; z-index:6; width:100%; background:var(--surface-soft); }
+.ot-header-cell { flex:none; padding:6px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; background:var(--surface-soft); box-sizing:border-box; }
+.ot-header-cell span { display:block; color:var(--muted-2); font:9px Consolas,monospace; }
+.ot-header-cell strong { display:block; margin:4px 0; font-size:12px; white-space:nowrap; }
+.ot-header-cell code { display:block; color:var(--muted); font:10px Consolas,monospace; white-space:nowrap; }
+.ot-header-field { display:flex; align-items:center; gap:4px; min-width:0; }
+.ot-header-field code { min-width:0; overflow:hidden; text-overflow:ellipsis; user-select:text; }
+.ot-header-copy { display:grid; place-items:center; flex:none; width:16px; height:16px; padding:2px; border-radius:3px; color:var(--muted); background:transparent; }
+.ot-header-copy:hover,.ot-header-copy:focus-visible { color:var(--ot-accent); background:var(--ot-tint); }
+.ot-grid-row { position:absolute; display:flex; }
+.ot-row-number { position:sticky; left:0; flex:none; display:grid; place-items:center; z-index:4; color:var(--muted-2); background:var(--surface-soft); font:10px Consolas,monospace; border-right:1px solid var(--line); border-bottom:1px solid var(--line); box-sizing:border-box; user-select:none; }
+.ot-corner { z-index:5; }
+.ot-cell { position:relative; flex:none; padding:6px 12px; box-sizing:border-box; border-right:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; background:var(--panel); color:var(--text); cursor:cell; user-select:none; }
+.ot-cell>span { display:block; overflow:hidden; text-overflow:ellipsis; white-space:pre; line-height:18px; }
+.ot-grid-row:nth-child(even) .ot-cell { background:color-mix(in srgb,var(--surface-soft) 30%,var(--panel)); }
+.ot-cell.is-selected { background:var(--ot-tint) !important; box-shadow:inset 0 0 0 1px var(--ot-accent); }
+.ot-cell.has-error { color:#dc5858; }
+.ot-cell.is-fill-preview { background:var(--ot-tint) !important; box-shadow:inset 0 0 0 1px var(--ot-accent); opacity:.75; }
+.ot-fill-handle { position:absolute; right:0; bottom:0; width:9px; height:9px; padding:0; border:1px solid var(--panel); background:var(--ot-accent); cursor:crosshair; touch-action:none; z-index:5; }
+.ot-column-fill { position:absolute; right:10px; top:4px; border:0; border-radius:3px; padding:1px 4px; background:transparent; color:var(--muted); font:11px Consolas,monospace; cursor:pointer; }
+.ot-column-fill:hover,.ot-column-fill:focus,.ot-column-fill.has-rule { color:var(--ot-accent); background:var(--ot-tint); }
+.ot-dialog.ot-fill-dialog { width:min(520px,94vw); }
+.ot-fill-dialog label { display:flex; align-items:center; gap:12px; margin:12px 0; }
+.ot-fill-dialog select { flex:1; min-width:0; padding:7px; background:var(--surface-soft); color:var(--text); border:1px solid var(--line); border-radius:4px; }
+.ot-fill-source-label { display:block; color:var(--muted); margin-top:7px; }
+.ot-custom-target textarea { display:block; width:100%; box-sizing:border-box; resize:vertical; min-height:76px; max-height:180px; user-select:text; }
+.ot-custom-target textarea::selection { color:white; background:var(--ot-accent); }
+.ot-number-choices { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; max-height:94px; overflow:auto; }
+.ot-custom-highlight { padding:8px 10px; background:var(--surface-soft); border:1px solid var(--line); border-radius:4px; font:12px/1.6 Consolas,monospace; white-space:pre-wrap; overflow-wrap:anywhere; }
+.ot-custom-highlight mark { color:var(--text); background:color-mix(in srgb,var(--ot-accent) 28%,var(--panel)); border-bottom:2px solid var(--ot-accent); }
+.ot-fill-dialog [role="status"],.ot-fill-dialog [role="alert"] { white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.6; }
+.ot-cell textarea { position:absolute; inset:0; width:100%; height:100%; padding:6px 11px; margin:0; outline:1px solid var(--ot-accent); resize:none; border:0; background:var(--panel); color:var(--text); font:12px 'Microsoft YaHei',sans-serif; white-space:pre; text-align:inherit; }
+.ot-freeze-line { position:absolute; top:0; bottom:18px; width:7px; z-index:8; cursor:col-resize; touch-action:none; background:linear-gradient(90deg,transparent 2px,var(--ot-accent) 2px,var(--ot-accent) 4px,transparent 4px); opacity:.55; }
+.ot-freeze-line:hover,.ot-freeze-line:focus { opacity:1; }
+.ot-header-cell { position:relative; }
+.ot-column-resizer { position:absolute; right:0; top:0; bottom:0; width:7px; cursor:col-resize; touch-action:none; z-index:5; }
+.ot-column-resizer:hover,.ot-column-resizer:focus { background:color-mix(in srgb,var(--ot-accent) 60%,transparent); outline:0; }
+.ot-freeze-line { top:42px; }
+.ot-freeze-line::before { content:'⋮'; position:absolute; top:20px; left:-2px; color:var(--ot-accent); background:var(--panel); border:1px solid var(--line); border-radius:3px; width:9px; text-align:center; }
+.ot-bottom-scroll { flex:none; height:18px; overflow-x:scroll; overflow-y:hidden; background:var(--surface-soft); scrollbar-color:var(--scroll-thumb, #728a92) var(--surface-soft); }
+.ot-bottom-scroll::-webkit-scrollbar { height:16px; }
+.ot-bottom-scroll::-webkit-scrollbar-thumb { background:var(--scroll-thumb,#728a92); border-radius:8px; border:3px solid var(--surface-soft); }
+.ot-scroll-track { position:absolute; bottom:0; left:0; height:18px; z-index:9; background:var(--surface-soft); border-top:1px solid var(--line); touch-action:none; }
+.ot-scroll-thumb { position:absolute; top:3px; height:11px; min-width:28px; border-radius:6px; background:color-mix(in srgb,var(--muted) 65%,var(--panel)); border:1px solid color-mix(in srgb,var(--line) 80%,var(--muted)); }
+.ot-scroll-thumb:hover,.ot-scroll-track:focus .ot-scroll-thumb { background:var(--ot-accent); }
+.ot-modal-shade { position:fixed; inset:0; z-index:100; display:grid; place-items:center; background:#0005; }
+.ot-long-editor { width:min(700px,90vw); padding:18px; border:1px solid var(--line); background:var(--panel); box-shadow:0 20px 80px #0005; border-radius:8px; }
+.ot-long-editor header { margin-bottom:12px; font-weight:600; }
+.ot-long-editor small { color:var(--muted); margin-left:12px; font-weight:400; }
+.ot-long-editor textarea { width:100%; height:300px; padding:12px; background:var(--surface-soft); color:var(--text); border:1px solid var(--line); resize:vertical; font:13px/1.6 Consolas,'Microsoft YaHei',monospace; user-select:text; }
+.ot-long-editor footer { display:flex; justify-content:flex-end; gap:8px; margin-top:12px; }

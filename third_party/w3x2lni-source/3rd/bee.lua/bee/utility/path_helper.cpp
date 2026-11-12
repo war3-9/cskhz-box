@@ -1,0 +1,167 @@
+#include <bee/utility/path_helper.h>
+#include <bee/error.h>
+#include <vector>
+
+#if defined(_WIN32)
+
+#include <Windows.h>
+#include <shlobj.h>
+
+// http://blogs.msdn.com/oldnewthing/archive/2004/10/25/247180.aspx
+extern "C" IMAGE_DOS_HEADER __ImageBase;
+
+namespace bee::path_helper {
+    path_expected dll_path(void* module_handle) {
+        wchar_t buffer[MAX_PATH];
+        DWORD path_len = ::GetModuleFileNameW((HMODULE)module_handle, buffer, _countof(buffer));
+        if (path_len == 0) {
+            return unexpected<std::string>(make_syserror("GetModuleFileNameW").what());
+        }
+        if (path_len < _countof(buffer)) {
+            return fs::path(buffer, buffer + path_len);
+        }
+        for (DWORD buf_len = 0x200; buf_len <= 0x10000; buf_len <<= 1) {
+            std::vector<wchar_t> buf(buf_len);
+            path_len = ::GetModuleFileNameW((HMODULE)module_handle, buf.data(), buf_len);
+            if (path_len == 0) {
+                return unexpected<std::string>(make_syserror("GetModuleFileNameW").what());
+            }
+            if (path_len < _countof(buffer)) {
+                return fs::path(buf.data(), buf.data() + path_len);
+            }
+        }
+        return unexpected<std::string>("::GetModuleFileNameW return too long.");
+    }
+
+    path_expected exe_path() {
+        return dll_path(NULL);
+    }
+
+    path_expected dll_path() {
+        return dll_path(reinterpret_cast<void*>(&__ImageBase));
+    }
+
+    path_expected appdata_path() {
+        wchar_t* path;
+        if (SUCCEEDED(SHGetKnownFolderPath(FOLDERID_LocalAppData, 0, nullptr, &path))) {
+            fs::path res(path);
+            CoTaskMemFree(path);
+            return res;
+        }
+        return unexpected<std::string>("::SHGetKnownFolderPath failed.");
+    }
+}
+
+#else
+
+#if defined(__APPLE__)
+
+#include <mach-o/dyld.h>
+
+namespace bee::path_helper {
+    path_expected exe_path() {
+        uint32_t path_len = 0;
+        _NSGetExecutablePath(0, &path_len);
+        if (path_len <= 1) {
+            return unexpected<std::string>("_NSGetExecutablePath failed.");
+        }
+        std::vector<char> buf(path_len);
+        int rv = _NSGetExecutablePath(buf.data(), &path_len);
+        if (rv != 0) {
+            return unexpected<std::string>("_NSGetExecutablePath failed.");
+        }
+        return fs::path(buf.data(), buf.data() + path_len - 1);
+    }
+}
+
+#else
+
+#include <unistd.h>
+
+namespace bee::path_helper {
+    path_expected exe_path() {
+        std::error_code ec;
+        auto res = fs::read_symlink("/proc/self/exe", ec);
+        if (ec) {
+            return unexpected<std::string>(make_syserror("exe_path").what());
+        }
+        return res;
+    }
+
+    path_expected appdata_path() {
+        if (const char* env = getenv("XDG_DATA_HOME")) {
+            return fs::path(env);
+        }
+        if (const char* env = getenv("HOME")) {
+            return fs::path(env) / ".local" / "share";
+        }
+        return unexpected<std::string>("neither XDG_DATA_HOME nor HOME environment is set");
+    }
+}
+
+#endif
+
+#if defined(BEE_DISABLE_DLOPEN)
+
+namespace bee::path_helper {
+    path_expected dll_path(void* module_handle) {
+        return unexpected<std::string>("disable dl.");
+    }
+    path_expected dll_path() {
+        return dll_path(nullptr);
+    }
+}
+
+#else
+
+#include <dlfcn.h>
+
+namespace bee::path_helper {
+    path_expected dll_path(void* module_handle) {
+        ::Dl_info dl_info;
+        dl_info.dli_fname = 0;
+        int const ret = ::dladdr(module_handle, &dl_info);
+        if (0 != ret && dl_info.dli_fname != NULL) {
+            return fs::absolute(dl_info.dli_fname).lexically_normal();
+        }
+        return unexpected<std::string>("::dladdr failed.");
+    }
+
+    path_expected dll_path() {
+        return dll_path((void*)&exe_path);
+    }
+}
+
+#endif
+
+#endif
+
+namespace bee::path_helper {
+#if defined(_WIN32)
+    bool equal(fs::path const& lhs, fs::path const& rhs) {
+        fs::path lpath = lhs.lexically_normal();
+        fs::path rpath = rhs.lexically_normal();
+        const fs::path::value_type* l(lpath.c_str());
+        const fs::path::value_type* r(rpath.c_str());
+        while ((towlower(*l) == towlower(*r) || (*l == L'\\' && *r == L'/') || (*l == L'/' && *r == L'\\')) && *l) {
+            ++l; ++r;
+        }
+        return *l == *r;
+    }
+#elif defined(__APPLE__)
+    bool equal(fs::path const& lhs, fs::path const& rhs) {
+        fs::path lpath = lhs.lexically_normal();
+        fs::path rpath = rhs.lexically_normal();
+        const fs::path::value_type* l(lpath.c_str());
+        const fs::path::value_type* r(rpath.c_str());
+        while (towlower(*l) == towlower(*r) && *l) {
+            ++l; ++r;
+        }
+        return *l == *r;
+}
+#else
+    bool equal(fs::path const& lhs, fs::path const& rhs) {
+        return lhs.lexically_normal() == rhs.lexically_normal();
+    }
+#endif
+}

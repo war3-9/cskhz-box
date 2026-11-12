@@ -1,0 +1,38 @@
+.ot-dialog,.ot-context-menu { --ot-accent:#118b78; --ot-tint:color-mix(in srgb,var(--ot-accent) 12%,var(--panel)); color:var(--text); font:12px 'Microsoft YaHei',sans-serif; }
+.ot-dialog { width:min(760px,94vw); max-height:94dvh; display:flex; flex-direction:column; padding:18px; border:1px solid var(--line); background:var(--panel); box-shadow:0 20px 80px #0005; border-radius:10px; overflow:auto; }
+.ot-dialog>header { display:flex; align-items:center; justify-content:space-between; gap:12px; font-size:15px; font-weight:600; margin-bottom:14px; }
+.ot-dialog footer { display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-top:14px; }
+.ot-dialog footer small { margin-right:auto; color:var(--muted); }
+.ot-dialog input,.ot-dialog textarea { background:var(--surface-soft); color:var(--text); border:1px solid var(--line); border-radius:4px; padding:7px 10px; font:12px/1.5 Consolas,'Microsoft YaHei',monospace; outline-color:var(--ot-accent); }
+.ot-dialog-hint { color:var(--muted); line-height:1.6; margin:8px 0; }
+.ot-color-tools,.ot-color-code { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.ot-swatches { display:flex; gap:4px; flex-wrap:wrap; }
+.ot-swatches button { width:25px; height:25px; border:1px solid #7778; border-radius:4px; box-shadow:inset 0 0 0 1px #fff3; cursor:pointer; }
+.ot-swatches button:hover { outline:2px solid var(--ot-accent); outline-offset:1px; }
+.ot-custom-color { position:relative; overflow:hidden; cursor:pointer; }
+.ot-custom-color input { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer; }
+.ot-color-code { margin-top:12px; }
+.ot-color-code input { width:150px; margin-left:8px; }
+.ot-editor-label { display:block; color:var(--muted); margin:12px 0 6px; }
+.ot-color-preview { min-height:100px; height:clamp(100px,22dvh,210px); overflow:auto; padding:12px; border:1px solid var(--line); border-radius:4px; background:#101114; color:#eee; font:14px/1.7 'Microsoft YaHei',sans-serif; white-space:pre-wrap; overflow-wrap:anywhere; user-select:text; outline-color:var(--ot-accent); }
+.ot-color-dialog textarea { display:block; width:100%; height:clamp(90px,20dvh,190px); resize:vertical; user-select:text; box-sizing:border-box; }
+.ot-context-menu { position:fixed; z-index:110; min-width:210px; padding:5px; border:1px solid var(--line); background:var(--panel); box-shadow:0 8px 30px #0004; border-radius:7px; }
+.ot-context-menu button { width:100%; display:block; padding:9px 12px; text-align:left; background:transparent; color:var(--text); border-radius:3px; font-size:12px; }
+.ot-context-menu button:hover,.ot-context-menu button:focus { background:var(--ot-tint); color:var(--ot-accent); outline:0; }
+.ot-context-menu button:nth-child(4) { border-bottom:1px solid var(--line); margin-bottom:4px; }
+.ot-template-dialog { height:min(720px,92dvh); }
+.ot-template-search { width:100%; box-sizing:border-box; margin-bottom:12px; }
+.ot-template-heading { display:flex; justify-content:space-between; padding:9px 30px 9px 12px; background:var(--surface-soft); color:var(--muted); border:1px solid var(--line); }
+.ot-template-tree { overflow:auto; flex:1; min-height:120px; border:1px solid var(--line); border-top:0; }
+.ot-template-folder,.ot-template-leaf { display:flex; align-items:center; width:100%; min-height:30px; gap:12px; padding:6px 18px; color:var(--text); background:transparent; text-align:left; font-size:12px; }
+.ot-template-folder { font-weight:600; }
+.ot-template-leaf>span { flex:1; }
+.ot-template-leaf>.ot-template-icon { flex:none; width:28px; height:28px; display:grid; place-items:center; }
+.ot-template-icon img { object-fit:contain; border-radius:3px; }
+.ot-template-tabs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+.ot-template-tabs .ot-icon-directory { margin-left:auto; }
+.ot-template-leaf code { width:80px; flex:none; color:var(--muted); }
+.ot-template-folder:hover,.ot-template-leaf:hover { background:var(--surface-soft); }
+.ot-template-leaf.is-selected { background:var(--ot-tint); box-shadow:inset 3px 0 var(--ot-accent); }
+.ot-batch-dialog { width:min(420px,94vw); }
+.ot-batch-dialog label { display:flex; align-items:center; gap:12px; }

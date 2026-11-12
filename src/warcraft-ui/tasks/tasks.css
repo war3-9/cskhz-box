@@ -1,0 +1,31 @@
+.warcraft-ui .ui-task-area { flex: none; margin-bottom: 10px; min-width: 0; }
+.warcraft-ui .creation-tools { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.warcraft-ui .creation-tools button[aria-label="保存列表"] { white-space: nowrap; font-size: 12px; gap: 4px; padding: 0 6px; }
+.warcraft-ui .creation-tools button[aria-label="保存列表"] svg { width: 16px; }
+.warcraft-ui .ui-task-tabs { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 6px; }
+.warcraft-ui .ui-task-tab { display: flex; flex: none; border: 1px solid var(--line); border-radius: 5px; background: var(--workspace); }
+.warcraft-ui .ui-task-tab.active { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 -2px var(--accent); }
+.warcraft-ui .ui-task-tab button { background: transparent; border: 0; }
+.warcraft-ui .ui-task-name { max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.warcraft-ui .ui-task-tab .ui-task-close { padding: 0 5px; }
+.warcraft-ui .ui-task-dot { width: 8px; height: 8px; flex: none; border-radius: 50%; background: currentColor; }
+.warcraft-ui .ui-task-save { margin-left: auto; flex: none; }
+.warcraft-ui .ui-task-empty { grid-column: 2 / -1; align-items: center; justify-content: center; gap: 12px; color: var(--text-secondary); }
+.warcraft-ui .ui-task-empty p { margin: 0; }
+@media (max-width: 560px) { .warcraft-ui .ui-task-empty { grid-column: auto; min-height: 270px; } }
+.warcraft-ui .ui-unsaved { color: var(--danger); font-weight: 700; }
+.warcraft-ui .ui-saved { color: var(--success); }
+.ui-design-dialog { width: min(550px, calc(100vw - 32px)); }
+.ui-design-dialog > .dialog-actions { padding: 0 18px 18px; }
+.ui-design-dialog .ui-unsaved { color: var(--danger); font-weight: 700; }
+.ui-design-dialog p { line-height: 1.7; overflow-wrap: anywhere; }
+.ui-design-dialog label { display: grid; gap: 8px; margin: 12px 0 20px; }
+.ui-design-dialog input { width: 100%; padding: 10px; }
+.ui-design-list { width: min(740px, calc(100vw - 32px)); }
+.ui-design-path { font-size: 12px; color: var(--muted); }
+.ui-design-rows { max-height: 50vh; overflow: auto; padding: 0 18px; }
+.ui-design-row { display: flex; align-items: center; gap: 10px; border-top: 1px solid var(--line); padding: 12px 0; }
+.ui-design-row > div { flex: 1; min-width: 0; }
+.ui-design-row strong { display: block; overflow-wrap: anywhere; }
+.ui-design-row time { display: block; font-size: 12px; color: var(--muted); margin-top: 5px; }
+.ui-design-dialog .ui-delete { color: var(--danger); border-color: var(--danger-line); }

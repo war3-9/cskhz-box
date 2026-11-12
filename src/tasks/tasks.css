@@ -1,0 +1,97 @@
+.task-tabs {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.task-create {
+  height: 30px;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 8px;
+  padding: 0 12px;
+  border-radius: 5px;
+  background: var(--accent);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+.task-create:hover {
+  background: var(--accent-strong);
+}
+.task-tab {
+  flex: none;
+  display: flex;
+  align-items: center;
+  max-width: 240px;
+  min-width: 100px;
+  border-right: 1px solid var(--line);
+  color: var(--muted);
+  border-bottom: 2px solid transparent;
+}
+.task-tab.active {
+  background: var(--panel);
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+.task-tab > button[role="tab"] {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px 0 12px;
+  height: 100%;
+  min-width: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+}
+.task-tab > button[role="tab"] > span:first-of-type {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.task-tab .icon-button {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  margin-right: 4px;
+}
+.task-tab .icon-button > .lucide {
+  width: 14px;
+  height: 14px;
+}
+.task-dirty {
+  flex: none;
+  color: var(--muted);
+}
+.task-close-body {
+  padding: 0 18px 18px;
+}
+.task-close-body p {
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+.task-empty {
+  flex: 1;
+  min-height: 0;
+}
+@media (max-width: 550px) {
+  .task-create {
+    font-size: 10px;
+    padding: 0 6px;
+    margin: 0 3px;
+  }
+  .task-tab {
+    max-width: 150px;
+  }
+  .task-tab > button[role="tab"] {
+    padding-left: 6px;
+  }
+  .task-tab > button[role="tab"] > .lucide {
+    display: none;
+  }
+}

@@ -1,0 +1,88 @@
+.topbar {
+  user-select: none;
+}
+.topbar-home .window-controls {
+  border-left: 1px solid var(--line);
+  padding-left: 12px;
+  margin-left: 8px;
+}
+.topbar-home .brand > span {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.topbar-home .brand .home-version { display: inline; margin: 0; font-size: 10px; font-weight: 400; color: var(--muted); white-space: nowrap; }
+.top-actions {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.topbar-home .top-actions {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.appreciation-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.appreciation-button:hover { color: var(--accent); background: var(--accent-soft); }
+.appreciation-dialog {
+  width: min(480px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+}
+.appreciation-dialog > img {
+  display: block;
+  width: min(100%, 440px);
+  max-height: calc(100dvh - 112px);
+  object-fit: contain;
+  margin: 12px auto 16px;
+}
+.window-controls {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border-left: 1px solid var(--line);
+  padding-left: 12px;
+  margin-left: 8px;
+}
+.window-controls .window-close:hover:not(:disabled) {
+  color: #ffffff;
+  background: #e5484d;
+}
+.window-controls .lucide-square,
+.window-controls .lucide-copy {
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 550px) {
+  .window-controls {
+    padding-left: 4px;
+    margin-left: 2px;
+    gap: 1px;
+  }
+}
+.ai-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  max-width: 160px;
+  background: transparent;
+  color: #16704e;
+  font-size: 12px;
+  padding: 6px 3px;
+}
+.ai-status-badge > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ai-connected-dot { width: 7px; height: 7px; flex: none; border-radius: 50%; background: #1c9a63; }
+@media (max-width: 650px) { .ai-status-badge { max-width: 84px; } }

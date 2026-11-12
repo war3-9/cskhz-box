@@ -1,0 +1,240 @@
+.modal.settings-panel {
+  width: min(940px, calc(100vw - 40px));
+}
+
+.settings-layout {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  height: min(660px, calc(100dvh - 110px));
+  min-height: 0;
+}
+.settings-nav {
+  padding: 14px 10px;
+  background: var(--surface-soft);
+  border-right: 1px solid var(--line);
+}
+.settings-nav button {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 12px;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--text-secondary);
+  text-align: left;
+  font-size: 13px;
+}
+.settings-nav button:hover,
+.settings-nav button.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.settings-content {
+  min-width: 0;
+  background: var(--panel);
+  overflow: auto;
+}
+.settings-section {
+  padding: 26px 30px 32px;
+  max-width: 680px;
+}
+.settings-section fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.settings-section fieldset:disabled {
+  opacity: 0.65;
+}
+.settings-badge {
+  font-size: 11px;
+  color: #14785a;
+  white-space: nowrap;
+}
+.settings-secret {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.settings-secret input {
+  flex: 1;
+  min-width: 0;
+}
+.settings-secret .icon-button {
+  flex: none;
+  margin-top: 7px;
+}
+.settings-field-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 110px 110px;
+  gap: 12px;
+}
+.settings-actions {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.settings-actions .secondary,
+.ai-image-test .secondary,
+.settings-section-heading .secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 36px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ai-image-test {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 0;
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.ai-image-test img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.settings-section .settings-image-picker {
+  flex: 1;
+  min-width: 150px;
+  margin: 0;
+}
+.settings-section .error-text {
+  color: #b42318;
+  overflow-wrap: anywhere;
+}
+.settings-section .settings-success {
+  overflow-wrap: anywhere;
+}
+.settings-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.settings-section h3 {
+  margin: 0;
+  font-size: 17px;
+}
+.settings-section p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.settings-section label {
+  display: block;
+  margin: 0 0 17px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+.settings-section input {
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin-top: 7px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface-soft);
+  color: var(--text);
+}
+.shortcut-list {
+  display: grid;
+  gap: 9px;
+}
+.shortcut-row {
+  display: grid !important;
+  grid-template-columns: 1fr 230px;
+  align-items: center;
+  margin: 0 !important;
+}
+.shortcut-row input {
+  margin: 0;
+  text-align: center;
+  cursor: text;
+}
+.shortcut-fixed kbd {
+  display: inline-block;
+  min-width: 80px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface-soft);
+  color: var(--text-secondary);
+  text-align: center;
+  font: inherit;
+  font-size: 12px;
+}
+.settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+.settings-success {
+  color: #16704e !important;
+}
+.settings-note {
+  margin-top: 28px !important;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 650px) {
+  .modal.settings-panel {
+    width: calc(100vw - 20px);
+  }
+  .settings-layout {
+    grid-template-columns: 110px minmax(0, 1fr);
+  }
+  .settings-section {
+    padding: 20px 16px 24px;
+  }
+  .shortcut-row {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  .settings-field-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .settings-nav {
+    padding: 10px 5px;
+  }
+  .settings-nav button {
+    padding: 0 7px;
+    gap: 5px;
+  }
+  .settings-section-heading {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.settings-model-row { display: flex; align-items: center; gap: 8px; }
+.settings-model-row input { min-width: 0; flex: 1; }
+.settings-model-row .secondary { display: inline-flex; align-items: center; gap: 5px; height: 40px; padding: 0 10px; margin-top: 7px; white-space: nowrap; }
+.quota-settings { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 14px 0; font-size: 13px; }
+.quota-settings summary { cursor: pointer; color: var(--text-secondary); }
+.quota-help { display: inline-flex; vertical-align: middle; margin-left: 5px; }
+.quota-help-title { display: block; margin-bottom: 8px; color: var(--text); font-size: 13px; }
+.quota-help-table { width: 100%; border-collapse: collapse; table-layout: fixed; text-align: left; }
+.quota-help-table th, .quota-help-table td { padding: 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.quota-help-table th:first-child, .quota-help-table td:first-child { width: 38%; padding-right: 8px; }
+.quota-help-table code { padding: 2px 4px; border-radius: 3px; background: var(--surface-soft); overflow-wrap: anywhere; font-size: 11px; }
+.quota-help-note { display: block; margin-top: 9px; color: var(--muted); font-size: 11px; }
+.quota-fields { margin-top: 18px; }
+.quota-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+.settings-section select, .settings-section textarea { width: 100%; padding: 8px 10px; margin-top: 7px; background: var(--surface-soft); color: var(--text); border: 1px solid var(--line); border-radius: 5px; }
+.quota-fields .secondary { padding: 8px 12px; }
+@media (max-width: 650px) { .settings-model-row { flex-wrap: wrap; } .settings-model-row input { flex-basis: 100%; } .quota-grid { grid-template-columns: minmax(0, 1fr); gap: 0; } }

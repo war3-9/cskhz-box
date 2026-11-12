@@ -1,0 +1,21 @@
+{
+  "cells": {
+    "buff:B": "B000",
+    "buff:C": "BHbd",
+    "buff:I": "暴风雪",
+    "buff:D": "暴风雪",
+    "buff:E": "该单位正受到暴风雪的攻击伤害。",
+    "buff:F": "Abilities\\Spells\\Other\\FrostDamage\\FrostDamage.mdl",
+    "buff:H": "ReplaceableTextures\\CommandButtons\\BTNBlizzard.blp",
+    "buff:G": "chest"
+  },
+  "extraColumns": [
+    {
+      "key": "buff:I",
+      "letter": "I",
+      "field": "EditorName",
+      "title": "文本 - 名字(编辑器)",
+      "width": 180
+    }
+  ]
+}

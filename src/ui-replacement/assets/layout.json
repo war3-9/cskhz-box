@@ -1,0 +1,208 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "coordinateSystem": {
+    "width": 0.8,
+    "height": 0.6,
+    "origin": "bottom-left"
+  },
+  "consoleDefinition": {
+    "file": "ConsoleUI.fdf",
+    "archive": "War3Patch.mpq",
+    "sha256": "76a3208eef2cbfa8e77f3926c8df035b3c9e7338d30271ef6c24627ed09cfcdd"
+  },
+  "models": [
+    {
+      "file": "HumanUI-InventoryCover.mdx",
+      "sha256": "92b9db20dcc0e0932835c6f990d829e4e0effa13431a230bac889ac24f704f9f"
+    },
+    {
+      "file": "HumanUI-TimeIndicator.mdx",
+      "sha256": "bd20ed762e567bd58ada0a9e7a1f115c673821a737400b9d43c9bf12a09703f7"
+    }
+  ],
+  "layers": [
+    {
+      "id": "HumanUITile01",
+      "textureWidth": 512,
+      "textureHeight": 512,
+      "sourceSha256": "26dd2e35b7f379089940eb5a4a9aad9878061a06e2950f18e0721499f77fc005",
+      "x": 0,
+      "y": 0,
+      "width": 614.4,
+      "height": 1080,
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 614.4,
+          "height": 57.6,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 0.125
+        },
+        {
+          "x": 0,
+          "y": 763.2,
+          "width": 614.4,
+          "height": 316.8,
+          "u": 0,
+          "v": 0.3125,
+          "uw": 1,
+          "vh": 0.6875
+        }
+      ]
+    },
+    {
+      "id": "HumanUITile02",
+      "textureWidth": 512,
+      "textureHeight": 512,
+      "sourceSha256": "9be09472ff218316396a2b29aaadb6e0029a208ce818663ee8838a30908b56cc",
+      "x": 614.4,
+      "y": 0,
+      "width": 614.4,
+      "height": 1080,
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 208.8,
+          "height": 57.6,
+          "u": 0,
+          "v": 0,
+          "uw": 0.339844,
+          "vh": 0.125
+        },
+        {
+          "x": 487.2,
+          "y": 0,
+          "width": 127.2,
+          "height": 57.6,
+          "u": 0.792969,
+          "v": 0,
+          "uw": 0.207031,
+          "vh": 0.125
+        },
+        {
+          "x": 0,
+          "y": 810,
+          "width": 614.4,
+          "height": 270,
+          "u": 0,
+          "v": 0.414063,
+          "uw": 1,
+          "vh": 0.585938
+        }
+      ]
+    },
+    {
+      "id": "HumanUITile03",
+      "textureWidth": 512,
+      "textureHeight": 512,
+      "sourceSha256": "473c40bd0840e564676e1cf25819838d210cedd086e8a1b35121341805127f8e",
+      "x": 1228.8,
+      "y": 0,
+      "width": 614.4,
+      "height": 1080,
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 614.4,
+          "height": 57.6,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 0.125
+        },
+        {
+          "x": 0,
+          "y": 763.2,
+          "width": 614.4,
+          "height": 316.8,
+          "u": 0,
+          "v": 0.3125,
+          "uw": 1,
+          "vh": 0.6875
+        }
+      ]
+    },
+    {
+      "id": "HumanUITile04",
+      "textureWidth": 64,
+      "textureHeight": 512,
+      "sourceSha256": "8227f467d46af9d9a2116c35b730743ee3c168f28b2b3337c97b8c084133e370",
+      "x": 1843.2,
+      "y": 0,
+      "width": 76.8,
+      "height": 1080,
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 76.8,
+          "height": 57.6,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 0.125
+        },
+        {
+          "x": 0,
+          "y": 763.2,
+          "width": 76.8,
+          "height": 316.8,
+          "u": 0,
+          "v": 0.3125,
+          "uw": 1,
+          "vh": 0.6875
+        }
+      ]
+    },
+    {
+      "id": "HumanUITile-InventoryCover",
+      "textureWidth": 256,
+      "textureHeight": 512,
+      "sourceSha256": "f0b4cfa107ddb10eafdfa975dda9d1c187693ada0ea383210714b57f54aeb705",
+      "x": 1194.600034,
+      "y": 830.214002,
+      "width": 245.375991,
+      "height": 249.785998,
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 245.375991,
+          "height": 249.785998,
+          "u": 0.488809,
+          "v": 0.306068,
+          "uw": 0.511191,
+          "vh": 0.693932
+        }
+      ]
+    },
+    {
+      "id": "HumanUITile-TimeIndicatorFrame",
+      "textureWidth": 256,
+      "textureHeight": 128,
+      "sourceSha256": "f33231573fbe8811a1b51719420d0b86c1317eb127fde19c10d14c041731c5a2",
+      "x": 808.80003,
+      "y": -0.000043,
+      "width": 307.199979,
+      "height": 115.200019,
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 307.199979,
+          "height": 115.200019,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "超时空盒子开源版",
+  "version": "1.1.0",
+  "identifier": "com.cskhz.opensource",
+  "build": {
+    "beforeDevCommand": "pwsh -NoProfile -File scripts/dev.ps1",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "pwsh -NoProfile -File scripts/build-web.ps1",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "超时空盒子开源版",
+        "width": 1570,
+        "height": 962,
+        "decorations": false,
+        "resizable": true,
+        "dragDropEnabled": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: blob: box-image: http://box-image.localhost; font-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: box-image: http://box-image.localhost ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "icon": [
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": [
+          "SimpChinese"
+        ],
+        "displayLanguageSelector": false
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--bg);
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button {
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+}
+.app-shell {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.topbar {
+  height: 72px;
+  flex: none;
+  background: #f8faff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  gap: 20px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 214px;
+}
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.brand strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0;
+  margin-top: 2px;
+}
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+.icon-button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: inline-grid;
+  place-items: center;
+  background: transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  transition: 0.15s;
+}
+.lucide {
+  flex-shrink: 0;
+  stroke-width: 2;
+}
+.icon-button > .lucide,
+.text-button > .lucide,
+.primary > .lucide,
+.secondary > .lucide {
+  width: 18px;
+  height: 18px;
+}
+h2 > .lucide {
+  width: 19px;
+  height: 19px;
+  color: var(--accent);
+}
+.icon-button:hover:not(:disabled),
+.icon-button.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.icon-button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+.top-divider,
+.toolbar-divider,
+.status-divider {
+  height: 19px;
+  width: 1px;
+  background: var(--line);
+  margin: 0 9px;
+}
+.text-button {
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 9px;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 5px;
+  font-size: 13px;
+}
+.text-button:hover {
+  background: var(--surface-soft);
+  color: var(--text);
+}
+.text-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.primary {
+  height: 36px;
+  padding: 0 13px;
+  background: linear-gradient(120deg, #2563eb, #0891b2);
+  color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px #2563eb20;
+  font-size: 13px;
+  font-weight: 650;
+}
+.primary:hover {
+  background: #1d4ed8;
+}
+.primary:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.main-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(540px, 1fr) 320px;
+  flex: 1;
+  min-height: 0;
+}
+.category-panel,
+.asset-panel {
+  background: var(--panel);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.category-panel {
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+}
+.asset-panel {
+  border-left: 1px solid var(--line);
+}
+.panel-heading,
+.layer-heading {
+  height: 68px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-bottom: 1px solid var(--line);
+}
+h2 {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.panel-subtitle {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.panel-subtitle span {
+  color: var(--muted-2);
+}
+.asset-drag-ghost{position:fixed;z-index:100;pointer-events:none;background:#2469ae;color:#fff;border-radius:4px;padding:6px 10px;font-size:12px}

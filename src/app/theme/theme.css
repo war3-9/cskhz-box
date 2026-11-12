@@ -1,0 +1,90 @@
+:root {
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #1b2940;
+  background: #edf2f9;
+  font-synthesis: none;
+  color-scheme: light;
+  --bg: #edf2f9;
+  --panel: #ffffff;
+  --panel-2: #e6edf7;
+  --workspace: #e8edf4;
+  --surface-soft: #f3f6fb;
+  --line: #dce4ef;
+  --muted: #66768f;
+  --muted-2: #7c8aa0;
+  --text: #1b2940;
+  --text-secondary: #425470;
+  --accent: #2563eb;
+  --accent-strong: #1d4ed8;
+  --accent-soft: #e6efff;
+  --danger: #c24139;
+  --success: #16704e;
+  --success-soft: #e8f6ef;
+  --warning: #986814;
+  --warning-soft: #fff4dd;
+  --danger-soft: #fff0ef;
+  --danger-line: #e5b3ae;
+  --danger-strong: #c24139;
+  --panel-glass: color-mix(in srgb, var(--panel) 92%, transparent);
+  --scroll-thumb: #b4c2d5;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  color: #e2e9f4;
+  background: #141b27;
+  --bg: #141b27;
+  --panel: #1c2635;
+  --panel-2: #263448;
+  --workspace: #111925;
+  --surface-soft: #212e40;
+  --line: #35465d;
+  --muted: #a2b3cb;
+  --muted-2: #8c9eb8;
+  --text: #e2e9f4;
+  --text-secondary: #beccdf;
+  --accent: #83b1ff;
+  --accent-strong: #5088eb;
+  --accent-soft: #263e61;
+  --danger: #ff9b94;
+  --danger-soft: #42292c;
+  --danger-line: #8b4e50;
+  --danger-strong: #c24139;
+  --success: #8edbb4;
+  --success-soft: #203d34;
+  --warning: #e5c17c;
+  --warning-soft: #3c3326;
+  --scroll-thumb: #4d607b;
+}
+body { color: var(--text); }
+button, input, select, textarea { color-scheme: inherit; }
+.app-shell .topbar { background: var(--panel); color: var(--text); border-color: var(--line); }
+.app-shell .topbar .icon-button { color: var(--muted); }
+.app-shell .topbar .icon-button:hover:not(:disabled) { color: var(--accent); background: var(--accent-soft); }
+.app-shell .topbar .window-close:hover:not(:disabled) { color: #fff; background: #e5484d; }
+.primary { background: linear-gradient(120deg, #2563eb, #0891b2); color: #fff; }
+.home-functions { background: color-mix(in srgb, var(--panel) 84%, transparent); border-color: var(--line); color: var(--text); }
+.home-title { color: var(--text); text-shadow: none; }
+.home-entry { color: var(--text); border-color: var(--line); background: var(--panel); }
+.home-entry:hover:not(:disabled) { background: var(--accent-soft); border-color: var(--accent); }
+.home-entry :is(.home-entry-orbit, .home-entry-arrow) { color: var(--accent); }
+.viewer-shell { --viewer-text: var(--text); --viewer-line: var(--line); color-scheme: inherit; }
+.terrain-clone-page { --terrain-ink: var(--text); --terrain-line: var(--line); }
+.warcraft-ui { color-scheme: inherit; }
+.box-ui-settings-path input { background: var(--surface-soft); color: var(--text); }
+.warcraft-ui button, .viewer-shell button { border-radius: 6px; }
+.terrain-clone-page .terrain-button { background: var(--surface-soft); color: var(--text); border: 1px solid var(--line); border-radius: 6px; font-weight: 600; }
+.terrain-clone-page .terrain-button:hover:not(:disabled) { background: var(--accent-soft); color: var(--accent); }
+.terrain-clone-page :is(.terrain-open, .terrain-new, .terrain-teal) { background: #2563eb; border-color: #2563eb; color: #fff; }
+.terrain-clone-page :is(.terrain-encrypt, .terrain-danger) { background: var(--danger-soft); border-color: var(--danger-line); color: var(--danger); }
+.task-create { background: #2563eb; }
+.toast { background: var(--success-soft); color: var(--success); }
+.toast.error { background: var(--danger-soft); color: var(--danger); }
+.task-row { background: var(--surface-soft); }
+html[data-theme="dark"] .loading-screen { background: var(--panel-glass); }
+.canvas-viewport.drag-over { background-color: var(--accent-soft); }
+.canvas-empty, .canvas-dimension { background: var(--panel-glass); border-color: var(--line); }
+.settings-badge, .fixed-layer-status { color: var(--success); }
+.settings-success { color: var(--success) !important; }
+.asset-card:hover { background: var(--accent-soft); border-color: var(--accent); }
+.template-nav > .lucide, .group-toggle > .lucide { color: var(--accent); }
+::-webkit-scrollbar-thumb { background: var(--scroll-thumb); }

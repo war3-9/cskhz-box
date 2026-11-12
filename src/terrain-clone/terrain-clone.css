@@ -1,0 +1,111 @@
+.terrain-clone-page {
+  --terrain-ink: var(--text);
+  --terrain-line: var(--line);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  padding: 10px 14px 12px;
+  overflow: hidden;
+  color: var(--terrain-ink);
+  background: var(--workspace);
+  font-size: 12px;
+}
+.terrain-toolbar,
+.terrain-toolbar-group,
+.terrain-options-row,
+.terrain-log-heading,
+.terrain-log-heading > div {
+  display: flex;
+  align-items: center;
+}
+.terrain-toolbar {
+  min-height: 44px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.terrain-toolbar-group {
+  min-height: 34px;
+  gap: 5px;
+  padding-right: 9px;
+  border-right: 1px solid var(--terrain-line);
+}
+.terrain-toolbar-group:last-child { margin-left: auto; padding-right: 0; border: 0; }
+.terrain-file-group { flex: 1 1 220px; }
+.terrain-action-group { flex: 1 1 240px; justify-content: center; }
+.terrain-final-group { flex: 1 1 285px; justify-content: flex-end; }
+.terrain-button {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 11px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 650;
+  white-space: nowrap;
+  transition: filter 120ms ease, transform 120ms ease;
+}
+.terrain-button:hover { filter: brightness(1.08); }
+.terrain-button:disabled { cursor: not-allowed; opacity: .52; filter: saturate(.35); }
+.terrain-button:focus-visible,
+.terrain-options-row input:focus-visible,
+.terrain-options-row select:focus-visible,
+.terrain-number-control input:focus-visible,
+.terrain-text-action:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.terrain-button:active { transform: translateY(1px); }
+.terrain-open { background: var(--accent-strong); }
+.terrain-encrypt { background: var(--danger); }
+.terrain-new { background: var(--accent-strong); }
+.terrain-muted { background: var(--accent-strong); }
+.terrain-danger { background: var(--danger); }
+.terrain-purple { background: var(--accent-strong); }
+.terrain-teal { background: var(--accent-strong); }
+.terrain-log-clear { min-width: 58px; background: var(--accent-strong); }
+.terrain-file-name { max-width: 135px; overflow: hidden; color: var(--muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.terrain-options-row {
+  min-height: 27px;
+  gap: 11px;
+  flex-wrap: wrap;
+  padding: 1px 2px;
+}
+.terrain-options-row label { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+.terrain-options-row input[type="checkbox"],
+.terrain-options-row input[type="radio"] { width: 13px; height: 13px; margin: 0; accent-color: var(--accent-strong); }
+.terrain-options-label { color: var(--text-secondary); font-weight: 650; white-space: nowrap; }
+.terrain-control-divider { width: 1px; height: 18px; flex: none; background: var(--terrain-line); }
+.terrain-number-control input { width: 49px; height: 23px; padding: 0 4px; border: 1px solid var(--line); border-radius: 3px; background: var(--surface-soft); color: var(--text); }
+.terrain-options-row select { height: 23px; max-width: 90px; padding: 0 4px; border: 1px solid var(--line); border-radius: 3px; background: var(--surface-soft); color: var(--text); }
+.terrain-hint { color: var(--muted); font-size: 11px; }
+.terrain-text-action { padding: 3px 7px; border-radius: 3px; background: var(--panel-2); color: var(--accent); font-size: 11px; white-space: nowrap; }
+.terrain-height-action { display: inline-flex; align-items: center; gap: 4px; min-height: 25px; }
+.terrain-height-action:disabled { cursor: not-allowed; opacity: .45; }
+.terrain-stage-message { display: flex; min-height: 30px; align-items: center; gap: 10px; padding: 4px 10px; border: 1px solid var(--warning); border-radius: 4px; background: var(--warning-soft); color: var(--warning); }
+.terrain-stage-message button { display: grid; width: 22px; height: 22px; place-items: center; margin-left: auto; border-radius: 3px; background: transparent; color: inherit; }
+.terrain-map-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; flex: 1; min-height: 220px; }
+.terrain-map-pane { display: flex; min-width: 0; min-height: 0; flex-direction: column; border: 1px solid var(--line); background: var(--workspace); }
+.terrain-map-heading { display: flex; min-height: 32px; align-items: center; gap: 10px; padding: 0 11px; border-bottom: 1px solid var(--line); background: var(--panel); }
+.terrain-map-heading strong { flex: none; font-size: 12px; }
+.terrain-map-heading span { overflow: hidden; color: var(--muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.terrain-map-source .terrain-map-heading strong { color: var(--success); }
+.terrain-map-target .terrain-map-heading strong { color: var(--warning); }
+.terrain-map-canvas { display: block; width: 100%; min-height: 0; flex: 1; touch-action: none; cursor: crosshair; background: var(--workspace); }
+.terrain-selection-status { display: flex; min-height: 30px; align-items: center; gap: 20px; padding: 0 11px; border-left: 3px solid var(--line); background: var(--accent-soft); color: var(--success); }
+.terrain-selection-status span + span { color: var(--warning); }
+.terrain-log { display: flex; height: 112px; flex: none; flex-direction: column; min-height: 80px; border-top: 1px solid var(--line); }
+.terrain-log-heading { min-height: 31px; justify-content: space-between; padding: 0 4px 0 11px; color: var(--muted); }
+.terrain-log-heading > div { gap: 5px; }
+.terrain-log-heading .terrain-button { min-height: 25px; padding: 0 11px; }
+.terrain-log textarea { width: 100%; flex: 1; min-height: 0; resize: none; padding: 7px 9px; border: 1px solid var(--line); border-radius: 3px; outline-color: var(--accent); background: var(--workspace); color: var(--text-secondary); font: 12px/1.5 "Segoe UI", "Microsoft YaHei", sans-serif; }
+@media (max-width: 1100px) {
+  .terrain-final-group { justify-content: flex-start; }
+  .terrain-toolbar-group:last-child { margin-left: 0; }
+}
+@media (max-width: 760px) {
+  .terrain-map-grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(180px, 1fr) minmax(180px, 1fr); }
+  .terrain-clone-page { overflow-y: auto; }
+  .terrain-map-grid { flex: none; }
+}

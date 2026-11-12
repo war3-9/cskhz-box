@@ -1,0 +1,15 @@
+.ot-dialog.ot-fill-dialog:has(.ot-multi-target) { width:min(720px,94vw); }
+.ot-fill-dialog .ot-multi-target > label { display:block; }
+.ot-multi-target textarea { display:block; width:100%; box-sizing:border-box; margin-top:8px; resize:vertical; max-height:120px; }
+.ot-multi-actions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:10px 0; }
+.ot-multi-actions span,.ot-multi-number small { color:var(--muted); font-size:12px; }
+.ot-multi-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; max-height:240px; overflow:auto; padding:2px; }
+.ot-multi-number { min-width:0; padding:10px; border:1px solid var(--line); border-radius:6px; background:var(--surface-soft); }
+.ot-multi-number.selected { border-color:var(--ot-accent); }
+.ot-fill-dialog .ot-multi-number label { margin:0; gap:8px; }
+.ot-multi-number input[type=checkbox] { flex:none; width:16px; height:16px; }
+.ot-multi-number input:not([type=checkbox]) { min-width:0; width:100%; flex:1; }
+.ot-multi-number p { margin:8px 0; white-space:pre-wrap; overflow-wrap:anywhere; font-size:12px; max-height:48px; overflow:auto; color:var(--muted); }
+.ot-multi-number mark { background:transparent; color:var(--text); font-weight:bold; }
+.ot-fill-dialog [role=status] { max-height:160px; overflow:auto; }
+@media(max-width:540px) { .ot-multi-list { grid-template-columns:minmax(0,1fr); } }

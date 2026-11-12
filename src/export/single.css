@@ -1,0 +1,9 @@
+.modal.single-export-modal { width: min(460px, calc(100vw - 32px)); }
+.single-export-body { padding: 16px 18px; }
+.single-export-body > fieldset { min-width: 0; border: 0; margin: 0; padding: 0; }
+.single-export-format { margin-bottom: 16px; }
+.single-export-format-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
+.single-export-format-heading .batch-icon-option { margin-bottom: 0; }
+.single-export-format-heading label { margin: 0; }
+.single-pair-summary { color: var(--text-secondary); font-size: 12px; margin: 0; }
+html[data-theme="dark"] .single-export-modal .error-text { color: #ff9b94; }

@@ -1,0 +1,9 @@
+[
+  ["B", "自定义ID", "留空则自动生成ID"],
+  ["C", "模板", "buff"],
+  ["D", "提示工具", "Bufftip"],
+  ["E", "提示工具扩展", "Buffubertip"],
+  ["F", "目标", "TargetArt"],
+  ["G", "目标附加点1", "Targetattach"],
+  ["H", "图标", "Buffart"]
+]

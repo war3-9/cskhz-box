@@ -1,0 +1,25 @@
+.home-page {
+  --panel: rgb(255 255 255 / 10%);
+  --surface-soft: rgb(255 255 255 / 8%);
+  --line: rgb(255 255 255 / 22%);
+  --text: #f4f8ff;
+  --text-secondary: #e2eaf5;
+  --muted: rgb(236 245 255 / 78%);
+  --muted-2: rgb(236 245 255 / 60%);
+  --accent: #bce7ff;
+  --accent-strong: #fff;
+  --accent-soft: rgb(255 255 255 / 15%);
+  --warning: #ffe3a5;
+  --danger: #ffc0ba;
+  --success: #b2f1d0;
+}
+:root[data-theme="dark"] .home-page { --panel: rgb(0 0 0 / 16%); --surface-soft: rgb(255 255 255 / 6%); }
+.home-page .home-function-view .home-entry {
+  background: var(--panel);
+  border-color: var(--line);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: inset 0 1px rgb(255 255 255 / 9%), 0 5px 20px rgb(0 0 0 / 8%);
+}
+.home-page .home-functions { background: var(--panel); }
+.home-page .home-title { text-shadow: 0 2px 18px rgb(0 0 0 / 32%); }

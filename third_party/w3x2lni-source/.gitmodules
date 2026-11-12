@@ -1,0 +1,27 @@
+[submodule "c++/bee.lua"]
+	path = 3rd/bee.lua
+	url = https://github.com/actboy168/bee.lua
+[submodule "3rd/lml"]
+	path = 3rd/lml
+	url = https://github.com/actboy168/lml
+[submodule "3rd/w3xparser"]
+	path = 3rd/w3xparser
+	url = https://github.com/actboy168/w3xparser
+[submodule "3rd/lpeglabel"]
+	path = 3rd/lpeglabel
+	url = https://github.com/sqmedeiros/lpeglabel
+[submodule "3rd/stormlib"]
+	path = 3rd/stormlib
+	url = https://github.com/ladislav-zezula/StormLib
+[submodule "3rd/lni"]
+	path = 3rd/lni
+	url = https://github.com/actboy168/lni
+[submodule "3rd/zlib"]
+	path = 3rd/zlib
+	url = https://github.com/madler/zlib
+[submodule "casclib"]
+	path = 3rd/casclib
+	url = https://github.com/ladislav-zezula/CascLib
+[submodule "3rd/ffi"]
+	path = 3rd/ffi
+	url = https://github.com/actboy168/luaffi

@@ -1,0 +1,6 @@
+data/** linguist-vendored
+template/** linguist-vendored
+*.lml text eol=crlf
+*.txt text eol=crlf
+*.j text eol=crlf
+*.lua text eol=crlf

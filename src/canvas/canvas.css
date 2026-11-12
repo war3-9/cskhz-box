@@ -1,0 +1,232 @@
+.editor-area {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--workspace);
+}
+.editor-toolbar-row {
+  display: flex;
+  align-items: center;
+  flex: none;
+  min-width: 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+.editor-toolbar-row .canvas-toolbar {
+  flex: 1;
+  min-width: 0;
+  border-bottom: 0;
+}
+.editor-toolbar-row .task-create {
+  margin-left: 10px;
+}
+.task-row {
+  display: flex;
+  flex: none;
+  min-width: 0;
+  height: 38px;
+  border-bottom: 1px solid var(--line);
+  background: #f3f6fb;
+}
+.task-row .task-tabs {
+  width: 100%;
+}
+.task-row .task-tab {
+  height: 38px;
+}
+.canvas-toolbar {
+  height: 58px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 17px;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+.tool-group {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.canvas-toolbar .text-button {
+  white-space: nowrap;
+}
+.bucket-tool {
+  position: relative;
+}
+.bucket-palette {
+  position: absolute;
+  z-index: 5;
+  top: 38px;
+  left: -4px;
+  display: grid;
+  gap: 8px;
+  min-width: 170px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  box-shadow: 0 8px 24px #17254426;
+}
+.bucket-palette-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; }
+.bucket-palette-heading button { width: 24px; height: 24px; padding: 0; border-radius: 4px; background: var(--surface-soft); }
+.bucket-palette label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.bucket-palette input[type="color"] {
+  width: 34px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.bucket-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.bucket-swatches button {
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.segmented {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--surface-soft);
+  border-radius: 6px;
+}
+.segmented .icon-button {
+  width: 32px;
+  height: 32px;
+}
+.zoom-value {
+  min-width: 42px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.canvas-area {
+  position: relative;
+  flex: 1;
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--workspace);
+  background-image: none;
+}
+.canvas-viewport {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.canvas-scroll-space {
+  pointer-events: none;
+}
+.canvas-render-surface {
+  position: absolute;
+  overflow: hidden;
+}
+.canvas-viewport.drag-over {
+  background-color: #e9f2ff;
+}
+.canvas-viewport.drag-over:after {
+  content: "松开以添加素材";
+  position: absolute;
+  inset: 25px;
+  border: 1px dashed var(--accent);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  background: #2563eb0b;
+  font-size: 13px;
+  pointer-events: none;
+}
+.canvas-viewport.panning {
+  cursor: grab;
+}
+.canvas-viewport canvas {
+  position: absolute !important;
+  inset: 0;
+}
+.artboard-background {
+  position: absolute;
+  background: var(--panel);
+  border: 1px solid #c1cddd;
+  box-shadow: 0 20px 55px #17254424;
+}
+.canvas-empty {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 210px;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: #ffffffed;
+  border: 1px dashed #93b4df;
+  color: var(--text-secondary);
+  border-radius: 8px;
+}
+.canvas-empty span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.canvas-uncreated {
+  width: min(260px, 90%);
+}
+.canvas-dimension {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  color: var(--muted);
+  font-size: 11px;
+  background: #ffffffcc;
+  padding: 4px 7px;
+  border-radius: 3px;
+}
+.editor-status {
+  height: 34px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+}
+.fixed-layer-status {
+  min-width: 0;
+  max-width: 55%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #167243;
+  margin-right: 12px;
+  font-size: 12px;
+}
+.saved-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #14b8a6;
+  margin-right: 6px;
+}
+.status-hint {
+  margin-left: auto;
+  color: var(--muted-2);
+}

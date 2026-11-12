@@ -1,0 +1,57 @@
+[
+  {
+    "name": "W3x2Lni",
+    "url": "https://github.com/sumneko/w3x2lni",
+    "revision": "2f77a76aa1d59efc5a3c461494c64047fe659081"
+  },
+  {
+    "path": "3rd/bee.lua",
+    "url": "https://github.com/actboy168/bee.lua",
+    "revision": "f26e3cf9b7ed13d2cde202205c2a6a61a63a55d7"
+  },
+  {
+    "path": "3rd/casclib",
+    "url": "https://github.com/ladislav-zezula/CascLib",
+    "revision": "2376961462f0e8c0036cd76f4f88cbbbc44add34"
+  },
+  {
+    "path": "3rd/ffi",
+    "url": "https://github.com/actboy168/luaffi",
+    "revision": "e389f05988261d8fc35f4a1bd792377276107e55"
+  },
+  {
+    "path": "3rd/ffi/lua",
+    "url": "https://github.com/lua/lua",
+    "revision": "681297187ec45268e872b26753c441586c12bdd8"
+  },
+  {
+    "path": "3rd/lml",
+    "url": "https://github.com/actboy168/lml",
+    "revision": "9e20597a6df872a93589b9385038470e3343c149"
+  },
+  {
+    "path": "3rd/lni",
+    "url": "https://github.com/actboy168/lni",
+    "revision": "8222dc4faa62183a594f44466ebcd39ab91632c7"
+  },
+  {
+    "path": "3rd/lpeglabel",
+    "url": "https://github.com/sqmedeiros/lpeglabel",
+    "revision": "ed183860289664af0f3727307653c9bf2bccdc80"
+  },
+  {
+    "path": "3rd/stormlib",
+    "url": "https://github.com/ladislav-zezula/StormLib",
+    "revision": "8f3f327697b392014cc084f4f3a3547ddb3a1b89"
+  },
+  {
+    "path": "3rd/w3xparser",
+    "url": "https://github.com/actboy168/w3xparser",
+    "revision": "d3bc590aa6ad62ef6087baa50ae80f421a8504d3"
+  },
+  {
+    "path": "3rd/zlib",
+    "url": "https://github.com/madler/zlib",
+    "revision": "21767c654d31d2dccdde4330529775c6c5fd5389"
+  }
+]

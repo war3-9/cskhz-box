@@ -1,0 +1,12 @@
+[
+  ["B", "自定义ID", "留空则自动生成ID"],
+  ["C", "模板", "upgrade"],
+  ["D", "名字", "Name"],
+  ["E", "需求", "Requires"],
+  ["F", "需求值", "Requiresamount"],
+  ["G", "基础黄金消耗", "goldbase"],
+  ["H", "可研究项目", "Researches"],
+  ["I", "按钮位置X", "Buttonpos1"],
+  ["J", "按钮位置Y", "Buttonpos2"],
+  ["K", "图标", "Art"]
+]

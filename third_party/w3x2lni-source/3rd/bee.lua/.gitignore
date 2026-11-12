@@ -1,0 +1,8 @@
+/build/
+/.cache
+/.vs/*
+!/.vs/launch.vs.json
+/.vscode/ipch/
+/.vscode/c_cpp_properties.json
+/.vscode/settings.json
+/bootstrap/forward_lua.h

@@ -1,0 +1,109 @@
+.template-list {
+  flex: 1;
+  overflow: auto;
+  padding: 14px;
+}
+.template-card {
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+  margin-bottom: 9px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  grid-template-columns: 88px minmax(0, 1fr);
+}
+.template-open {
+  min-width: 0;
+  flex: 1;
+  display: contents;
+  gap: 10px;
+  padding: 0;
+  text-align: left;
+  background: transparent;
+}
+.template-preview {
+  width: 88px;
+  height: 88px;
+  grid-row: 1 / 3;
+  aspect-ratio: 1;
+  flex: none;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  background: repeating-conic-gradient(#fff 0% 25%, #edf0f3 0% 50%) 0 0 / 16px
+    16px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.template-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+.template-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid var(--line);
+  padding-top: 5px;
+  grid-column: 2;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+.template-card-footer > span {
+  margin-right: auto;
+  color: var(--muted);
+  font-size: 12px;
+}
+.template-info {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+  align-content: center;
+  grid-column: 2;
+}
+.template-info strong,
+.template-info small {
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+.template-info strong {
+  color: var(--text);
+  font-size: 14px;
+}
+.template-info small {
+  color: var(--muted);
+  font-size: 12px;
+}
+@media (max-width: 1159px) {
+  .template-card {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+  .template-preview {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (max-width: 550px) {
+  .template-list {
+    padding: 5px;
+  }
+  .template-preview {
+    width: 48px;
+    height: 48px;
+  }
+  .template-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 5px;
+    padding: 4px;
+  }
+  .template-preview {
+    grid-row: auto;
+  }
+  .template-info,
+  .template-card-footer {
+    grid-column: 1;
+  }
+}

@@ -1,0 +1,9 @@
+.close-dialog { position: fixed; margin: auto; width: min(420px, calc(100vw - 32px)); padding: 28px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); color: var(--text); box-shadow: 0 20px 70px #0006; }
+.close-dialog::backdrop { background: #0006; backdrop-filter: blur(4px); }
+.close-dialog h2 { font-size: 17px; margin: 14px 0 10px; }
+.close-dialog p { color: var(--text-secondary); font-size: 13px; line-height: 1.7; margin: 0; }
+.close-dialog-icon { color: var(--accent); }
+.close-dialog-dismiss { position: absolute; top: 12px; right: 12px; padding: 4px; background: transparent; color: var(--muted); }
+.close-dialog-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 24px; }
+.close-dialog-actions button { min-width: 86px; padding: 9px 20px; border-radius: 7px; background: var(--surface-soft); color: var(--text); border: 1px solid var(--line); }
+.close-dialog-actions .primary { background: #2563eb; color: #fff; border-color: #2563eb; }

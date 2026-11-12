@@ -1,0 +1,16 @@
+.app-warcraft .feature-slot { min-height: 0; }
+.warcraft-normal-slot { display: flex; flex: 1; min-height: 0; }
+.warcraft-normal-slot[hidden] { display: none; }
+.app-warcraft .warcraft-ui { flex: 1; min-height: 0; overflow: auto; }
+.warcraft-ui > .app-shell { min-height: 100%; height: auto; }
+.app-warcraft .warcraft-ui .workspace { min-height: max(660px, calc(100dvh - 72px)); }
+@media (min-width: 851px) {
+  .app-warcraft .warcraft-ui { display: flex; overflow: hidden; }
+  .app-warcraft .warcraft-ui > .app-shell { flex: 1; min-height: 0; }
+  .app-warcraft .warcraft-ui .workspace { min-height: 0; grid-template-rows: minmax(0, 1fr); }
+  .app-warcraft .warcraft-ui .elements,
+  .app-warcraft .warcraft-ui .properties { min-height: 0; overflow: auto; }
+  .app-warcraft .warcraft-ui .canvas-panel,
+  .app-warcraft .warcraft-ui .stage-wrap { min-height: 0; }
+  .app-warcraft .warcraft-ui .notice { flex-shrink: 0; }
+}

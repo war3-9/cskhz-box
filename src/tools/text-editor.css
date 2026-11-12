@@ -1,0 +1,87 @@
+.modal:has(.text-editor) {
+  width: min(520px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+}
+.text-editor textarea {
+  min-height: 60px;
+}
+.text-preview {
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  overflow: hidden;
+  background-color: #e8edf5;
+  background-image: repeating-conic-gradient(
+    #f8faff 0% 25%,
+    transparent 0% 50%
+  );
+  background-size: 16px 16px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.text-preview img {
+  max-width: calc(100% - 24px);
+  max-height: 88px;
+  object-fit: contain;
+}
+.text-preview span {
+  color: var(--muted);
+  font-size: 12px;
+  padding: 12px;
+}
+.text-fill-mode {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--surface-soft);
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.text-fill-mode button {
+  flex: 1;
+  height: 30px;
+  color: var(--text-secondary);
+  background: transparent;
+  border-radius: 3px;
+}
+.text-fill-mode button[aria-pressed="true"] {
+  background: var(--panel);
+  color: var(--accent);
+  box-shadow: 0 1px 3px #17254412;
+}
+.text-effects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.text-effect-stepper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 72px;
+  gap: 10px;
+  align-items: center;
+}
+.text-effect-stepper input[type="range"] {
+  padding: 0;
+  accent-color: var(--accent);
+}
+.modal .text-stroke-toggle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.modal .text-stroke-toggle input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.text-editor .dialog-actions {
+  position: sticky;
+  bottom: 0;
+  padding: 10px 0;
+  margin-top: 4px;
+  background: var(--panel);
+}

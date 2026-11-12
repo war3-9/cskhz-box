@@ -1,0 +1,27 @@
+.workspace-loading { position: relative; flex: 1; min-height: 0; background: var(--workspace); }
+.workspace-loading-placeholder { position: absolute; inset: 0; display: grid; grid-template-columns: 190px 1fr 280px; gap: 1px; background: var(--line); }
+.workspace-loading-placeholder > div { background: var(--panel); }
+.workspace-loading-placeholder > div:nth-child(2) { display: grid; place-items: center; background: var(--workspace); }
+.workspace-loading-placeholder span { width: min(50%, 400px); aspect-ratio: 1; border: 1px solid var(--line); background: var(--panel); }
+.workspace-loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--panel) 56%, transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: var(--text);
+}
+.workspace-loading-status { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.workspace-loading-status p { margin: 0; font-size: 14px; }
+.workspace-loading-spinner {
+  width: 38px;
+  height: 38px;
+  border: 3px solid var(--line);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: workspace-loading-spin 850ms linear infinite;
+}
+@keyframes workspace-loading-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .workspace-loading-spinner { animation-duration: 2s; } }

@@ -1,0 +1,18 @@
+{
+  "cells": {
+    "doodad:B": "D000",
+    "doodad:C": "BOct",
+    "doodad:D": "半人马图腾",
+    "doodad:E": "B",
+    "doodad:F": "1.20",
+    "doodad:G": "0.80",
+    "doodad:H": "0",
+    "doodad:I": "PathTextures\\2x2Default.tga",
+    "doodad:J": "Doodads\\Barrens\\Props\\CentaurTotem\\CentaurTotem",
+    "doodad:K": "1.00",
+    "doodad:L": "255",
+    "doodad:M": "255",
+    "doodad:N": "255"
+  },
+  "extraColumns": []
+}

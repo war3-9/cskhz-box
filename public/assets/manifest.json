@@ -1,0 +1,290 @@
+{
+  "categories": [
+    {
+      "id": "rank",
+      "name": "品阶类",
+      "parentId": null,
+      "source": "builtin",
+      "thumbnail": "/assets/fire-1.png"
+    },
+    {
+      "id": "fire",
+      "name": "火焰类型",
+      "parentId": "rank",
+      "source": "builtin",
+      "thumbnail": "/assets/fire-1.png"
+    },
+    {
+      "id": "ice",
+      "name": "冰霜类型",
+      "parentId": "rank",
+      "source": "builtin",
+      "thumbnail": "/assets/ice-1.png"
+    },
+    {
+      "id": "nature",
+      "name": "自然类型",
+      "parentId": "rank",
+      "source": "builtin",
+      "thumbnail": "/assets/nature-1.png"
+    },
+    {
+      "id": "backgrounds",
+      "name": "底图类",
+      "parentId": null,
+      "source": "builtin",
+      "thumbnail": "/assets/base-1.png"
+    },
+    {
+      "id": "bases",
+      "name": "纹理底图",
+      "parentId": "backgrounds",
+      "source": "builtin",
+      "thumbnail": "/assets/base-1.png"
+    }
+  ],
+  "assets": [
+    {
+      "id": "fire-1",
+      "name": "赤焰 · 初阶",
+      "groupId": "rank",
+      "categoryId": "fire",
+      "source": "builtin",
+      "imagePath": "/assets/fire-1.png",
+      "thumbnailPath": "/assets/fire-1.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "fire-2",
+      "name": "赤焰 · 进阶",
+      "groupId": "rank",
+      "categoryId": "fire",
+      "source": "builtin",
+      "imagePath": "/assets/fire-2.png",
+      "thumbnailPath": "/assets/fire-2.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "fire-3",
+      "name": "赤焰 · 精英",
+      "groupId": "rank",
+      "categoryId": "fire",
+      "source": "builtin",
+      "imagePath": "/assets/fire-3.png",
+      "thumbnailPath": "/assets/fire-3.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "fire-4",
+      "name": "赤焰 · 稀有",
+      "groupId": "rank",
+      "categoryId": "fire",
+      "source": "builtin",
+      "imagePath": "/assets/fire-4.png",
+      "thumbnailPath": "/assets/fire-4.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "fire-5",
+      "name": "赤焰 · 史诗",
+      "groupId": "rank",
+      "categoryId": "fire",
+      "source": "builtin",
+      "imagePath": "/assets/fire-5.png",
+      "thumbnailPath": "/assets/fire-5.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "fire-6",
+      "name": "赤焰 · 传说",
+      "groupId": "rank",
+      "categoryId": "fire",
+      "source": "builtin",
+      "imagePath": "/assets/fire-6.png",
+      "thumbnailPath": "/assets/fire-6.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "ice-1",
+      "name": "霜晶 · 初阶",
+      "groupId": "rank",
+      "categoryId": "ice",
+      "source": "builtin",
+      "imagePath": "/assets/ice-1.png",
+      "thumbnailPath": "/assets/ice-1.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "ice-2",
+      "name": "霜晶 · 进阶",
+      "groupId": "rank",
+      "categoryId": "ice",
+      "source": "builtin",
+      "imagePath": "/assets/ice-2.png",
+      "thumbnailPath": "/assets/ice-2.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "ice-3",
+      "name": "霜晶 · 精英",
+      "groupId": "rank",
+      "categoryId": "ice",
+      "source": "builtin",
+      "imagePath": "/assets/ice-3.png",
+      "thumbnailPath": "/assets/ice-3.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "ice-4",
+      "name": "霜晶 · 稀有",
+      "groupId": "rank",
+      "categoryId": "ice",
+      "source": "builtin",
+      "imagePath": "/assets/ice-4.png",
+      "thumbnailPath": "/assets/ice-4.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "ice-5",
+      "name": "霜晶 · 史诗",
+      "groupId": "rank",
+      "categoryId": "ice",
+      "source": "builtin",
+      "imagePath": "/assets/ice-5.png",
+      "thumbnailPath": "/assets/ice-5.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "ice-6",
+      "name": "霜晶 · 传说",
+      "groupId": "rank",
+      "categoryId": "ice",
+      "source": "builtin",
+      "imagePath": "/assets/ice-6.png",
+      "thumbnailPath": "/assets/ice-6.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "nature-1",
+      "name": "翠羽 · 初阶",
+      "groupId": "rank",
+      "categoryId": "nature",
+      "source": "builtin",
+      "imagePath": "/assets/nature-1.png",
+      "thumbnailPath": "/assets/nature-1.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "nature-2",
+      "name": "翠羽 · 进阶",
+      "groupId": "rank",
+      "categoryId": "nature",
+      "source": "builtin",
+      "imagePath": "/assets/nature-2.png",
+      "thumbnailPath": "/assets/nature-2.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "nature-3",
+      "name": "翠羽 · 精英",
+      "groupId": "rank",
+      "categoryId": "nature",
+      "source": "builtin",
+      "imagePath": "/assets/nature-3.png",
+      "thumbnailPath": "/assets/nature-3.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "nature-4",
+      "name": "翠羽 · 稀有",
+      "groupId": "rank",
+      "categoryId": "nature",
+      "source": "builtin",
+      "imagePath": "/assets/nature-4.png",
+      "thumbnailPath": "/assets/nature-4.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "nature-5",
+      "name": "翠羽 · 史诗",
+      "groupId": "rank",
+      "categoryId": "nature",
+      "source": "builtin",
+      "imagePath": "/assets/nature-5.png",
+      "thumbnailPath": "/assets/nature-5.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "nature-6",
+      "name": "翠羽 · 传说",
+      "groupId": "rank",
+      "categoryId": "nature",
+      "source": "builtin",
+      "imagePath": "/assets/nature-6.png",
+      "thumbnailPath": "/assets/nature-6.png",
+      "width": 480,
+      "height": 480
+    },
+    {
+      "id": "base-1",
+      "name": "曜石金纹",
+      "groupId": "backgrounds",
+      "categoryId": "bases",
+      "source": "builtin",
+      "imagePath": "/assets/base-1.png",
+      "thumbnailPath": "/assets/base-1.png",
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "base-2",
+      "name": "青碧纹章",
+      "groupId": "backgrounds",
+      "categoryId": "bases",
+      "source": "builtin",
+      "imagePath": "/assets/base-2.png",
+      "thumbnailPath": "/assets/base-2.png",
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "base-3",
+      "name": "暮紫锦纹",
+      "groupId": "backgrounds",
+      "categoryId": "bases",
+      "source": "builtin",
+      "imagePath": "/assets/base-3.png",
+      "thumbnailPath": "/assets/base-3.png",
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "base-4",
+      "name": "古铜底纹",
+      "groupId": "backgrounds",
+      "categoryId": "bases",
+      "source": "builtin",
+      "imagePath": "/assets/base-4.png",
+      "thumbnailPath": "/assets/base-4.png",
+      "width": 768,
+      "height": 768
+    }
+  ]
+}

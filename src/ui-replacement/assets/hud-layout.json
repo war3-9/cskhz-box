@@ -1,0 +1,401 @@
+{
+  "definitions": [
+    {
+      "file": "ResourceBar.fdf",
+      "archive": "War3Patch.mpq",
+      "sha256": "88a62703a9a8a0239c8faed95ac471f2aa924d1b1424432960f4eb7305d4ad2e"
+    },
+    {
+      "file": "UpperButtonBar.fdf",
+      "archive": "War3Patch.mpq",
+      "sha256": "f185b4f4dc4d7eca1a732451c6fd85ced15fcfb32dd6bb700ad43adc765d3e1c"
+    },
+    {
+      "file": "CommandFunc.txt",
+      "archive": "war3.mpq",
+      "sha256": "66c24a00a54ae75786e8df97cbe315aad6fd14b637b693fe6001495098835a82"
+    }
+  ],
+  "layers": [
+    {
+      "id": "human-console-buttonstates2",
+      "name": "左上四个按钮",
+      "archivePath": "UI\\Widgets\\Console\\Human\\human-console-buttonstates2.blp",
+      "x": 4.8,
+      "y": 5.625,
+      "width": 816.0000000000001,
+      "height": 39.599999999999994,
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 204.00000000000003,
+          "height": 39.599999999999994,
+          "u": 0,
+          "v": 0,
+          "uw": 0.6640625,
+          "vh": 0.171875
+        },
+        {
+          "x": 204.00000000000003,
+          "y": 0,
+          "width": 204.00000000000003,
+          "height": 39.599999999999994,
+          "u": 0,
+          "v": 0,
+          "uw": 0.6640625,
+          "vh": 0.171875
+        },
+        {
+          "x": 408.00000000000006,
+          "y": 0,
+          "width": 204.00000000000003,
+          "height": 39.599999999999994,
+          "u": 0,
+          "v": 0,
+          "uw": 0.6640625,
+          "vh": 0.171875
+        },
+        {
+          "x": 612,
+          "y": 0,
+          "width": 204.00000000000003,
+          "height": 39.599999999999994,
+          "u": 0,
+          "v": 0,
+          "uw": 0.6640625,
+          "vh": 0.171875
+        }
+      ],
+      "textureWidth": 256,
+      "textureHeight": 256,
+      "archive": "war3.mpq",
+      "sha256": "57252fd095aaa9d10bf433664a536f7eb1b45f123b906f09016491309fc47219"
+    },
+    {
+      "id": "ResourceGold",
+      "name": "金币图标",
+      "archivePath": "UI\\Feedback\\Resources\\ResourceGold.blp",
+      "x": 1108.1250000000002,
+      "y": 5.625,
+      "width": 39.375,
+      "height": 29.53125,
+      "textureWidth": 32,
+      "textureHeight": 32,
+      "archive": "war3.mpq",
+      "sha256": "a8e0f12d6a51f2bee6e0610f1e5755570d4512f6337c1fb5dfba6c4518cb0a44",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 39.375,
+          "height": 29.53125,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "ResourceLumber",
+      "name": "木材图标",
+      "archivePath": "UI\\Feedback\\Resources\\ResourceLumber.blp",
+      "x": 1314.3750000000002,
+      "y": 5.625,
+      "width": 39.375,
+      "height": 29.53125,
+      "textureWidth": 32,
+      "textureHeight": 32,
+      "archive": "war3.mpq",
+      "sha256": "ffa8529266dd9906cf1e5da75fe78a6aa1956610721c68c7887a9f03d8093c07",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 39.375,
+          "height": 29.53125,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "infocard-heroattributes-str",
+      "name": "力量图标",
+      "archivePath": "UI\\Widgets\\Console\\Human\\infocard-heroattributes-str.blp",
+      "x": 1080,
+      "y": 888,
+      "width": 76.8,
+      "height": 57.6,
+      "textureWidth": 64,
+      "textureHeight": 64,
+      "archive": "war3.mpq",
+      "sha256": "0c717dcc4edbe3836b48043b2957348fc3ed425fac61bfd05b8653a51a1d3260",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 76.8,
+          "height": 57.6,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "infocard-heroattributes-agi",
+      "name": "敏捷图标",
+      "archivePath": "UI\\Widgets\\Console\\Human\\infocard-heroattributes-agi.blp",
+      "x": 1080,
+      "y": 949.2,
+      "width": 76.8,
+      "height": 57.6,
+      "textureWidth": 64,
+      "textureHeight": 64,
+      "archive": "war3.mpq",
+      "sha256": "2f0cda6883edeb1be37b04815d5b392b76affa873b53b88aede79c719724daa1",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 76.8,
+          "height": 57.6,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "infocard-heroattributes-int",
+      "name": "智力图标",
+      "archivePath": "UI\\Widgets\\Console\\Human\\infocard-heroattributes-int.blp",
+      "x": 1080,
+      "y": 1010.4,
+      "width": 76.8,
+      "height": 57.6,
+      "textureWidth": 64,
+      "textureHeight": 64,
+      "archive": "war3.mpq",
+      "sha256": "3627d1368a6debee9f1ce427a201591a534f689164b0f0facf72d14e85753c82",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 76.8,
+          "height": 57.6,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "human-healthbar-fill",
+      "name": "生命显示",
+      "archivePath": "UI\\Feedback\\HPBarConsole\\human-healthbar-fill.blp",
+      "x": 518.4,
+      "y": 1029.6,
+      "width": 180,
+      "height": 18,
+      "textureWidth": 128,
+      "textureHeight": 16,
+      "archive": "war3.mpq",
+      "sha256": "388b6b02f443e1b5d9c92c03fd8f68c1d5547f40e3e495b30610573485b7f83c",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 180,
+          "height": 18,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "human-manabar-fill",
+      "name": "法力显示",
+      "archivePath": "UI\\Feedback\\ManaBarConsole\\human-manabar-fill.blp",
+      "x": 518.4,
+      "y": 1056.6,
+      "width": 180,
+      "height": 18,
+      "textureWidth": 64,
+      "textureHeight": 8,
+      "archive": "war3.mpq",
+      "sha256": "e40c9127e05e3e825c905120098179f7bbbcf09fa0a6d6031d21fe9e7f61b507",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 180,
+          "height": 18,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "BTNMove",
+      "name": "移动",
+      "archivePath": "ReplaceableTextures\\CommandButtons\\BTNMove.blp",
+      "x": 1480.8,
+      "y": 840.6,
+      "width": 93.6,
+      "height": 70.2,
+      "textureWidth": 64,
+      "textureHeight": 64,
+      "archive": "war3.mpq",
+      "sha256": "91dca83cfb083e4cec4268b99e21d04cfd57a6b95a06d3095d2dc57772b0bb1a",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 93.6,
+          "height": 70.2,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "BTNStop",
+      "name": "停止",
+      "archivePath": "ReplaceableTextures\\CommandButtons\\BTNStop.blp",
+      "x": 1585.2,
+      "y": 840.6,
+      "width": 93.6,
+      "height": 70.2,
+      "textureWidth": 64,
+      "textureHeight": 64,
+      "archive": "war3.mpq",
+      "sha256": "ccc04e9024516c506c2434fb21d222a5e3fb2c6e8a74ebb7c485565fabf5be06",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 93.6,
+          "height": 70.2,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "BTNHoldPosition",
+      "name": "保持位置",
+      "archivePath": "ReplaceableTextures\\CommandButtons\\BTNHoldPosition.blp",
+      "x": 1689.6,
+      "y": 840.6,
+      "width": 93.6,
+      "height": 70.2,
+      "textureWidth": 64,
+      "textureHeight": 64,
+      "archive": "war3.mpq",
+      "sha256": "34d14287ea5fa48079a56d7bba6f5f555fc5a5255a662edbc0785966ab6eff78",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 93.6,
+          "height": 70.2,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    },
+    {
+      "id": "BTNAttack",
+      "name": "攻击",
+      "archivePath": "ReplaceableTextures\\CommandButtons\\BTNAttack.blp",
+      "x": 1794,
+      "y": 840.6,
+      "width": 93.6,
+      "height": 70.2,
+      "textureWidth": 64,
+      "textureHeight": 64,
+      "archive": "war3.mpq",
+      "sha256": "b375258fc76ec8d877914ca4e343bc4225c7e792f49bbabbf7f36eb2b2dddd6e",
+      "regions": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 93.6,
+          "height": 70.2,
+          "u": 0,
+          "v": 0,
+          "uw": 1,
+          "vh": 1
+        }
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "id": "quests",
+      "text": "任务 (F9)",
+      "x": 4.8,
+      "y": 5.625,
+      "width": 204.00000000000003,
+      "height": 39.599999999999994
+    },
+    {
+      "id": "menu",
+      "text": "菜单 (F10)",
+      "x": 208.80000000000004,
+      "y": 5.625,
+      "width": 204.00000000000003,
+      "height": 39.599999999999994
+    },
+    {
+      "id": "allies",
+      "text": "盟友 (F11)",
+      "x": 412.80000000000007,
+      "y": 5.625,
+      "width": 204.00000000000003,
+      "height": 39.599999999999994
+    },
+    {
+      "id": "chat",
+      "text": "聊天 (F12)",
+      "x": 616.8000000000001,
+      "y": 5.625,
+      "width": 204.00000000000003,
+      "height": 39.599999999999994
+    },
+    {
+      "id": "gold",
+      "text": "0",
+      "x": 1168.3750000000002,
+      "y": 5.625,
+      "width": 116,
+      "height": 29.53125
+    },
+    {
+      "id": "lumber",
+      "text": "0",
+      "x": 1376.5000000000002,
+      "y": 5.625,
+      "width": 116,
+      "height": 29.53125
+    }
+  ]
+}

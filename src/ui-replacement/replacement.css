@@ -1,0 +1,21 @@
+.ui-replacement{display:flex;flex:1;flex-direction:column;min-height:0;min-width:0;outline:none;background:var(--workspace);color:var(--text)}
+.console-toolbar{display:flex;align-items:center;flex:none;height:54px;padding:7px 12px;background:var(--panel);border-bottom:1px solid var(--line)}
+.console-tools{display:flex;align-items:center;flex:1;min-width:0;gap:12px;white-space:nowrap}
+.console-tools>button{min-width:0;max-width:100%}
+.console-tools>.console-save{margin-left:auto;flex:none}
+.console-map-name{min-width:0;max-width:250px;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.console-action{display:flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:7px 10px;border-radius:6px;font-size:12px;white-space:nowrap}
+.console-canvas-wrap{position:relative;flex:1;min-height:0;min-width:0;overflow:hidden;background:var(--workspace)}
+.console-canvas-scroll{position:absolute;inset:0;display:flex;overflow:auto;padding:12px}
+.console-artboard{position:relative;flex:none;margin:auto;box-shadow:0 4px 24px #0004;outline:1px solid #68727e;overflow:hidden;background:#25332a}
+.console-empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;gap:12px;color:#f0f4f7}
+.console-empty-state p{margin:0;font-size:22px;font-weight:600}
+.console-empty-state span{font-size:13px;color:#b8c3bd}
+.modal.console-replace-dialog{width:min(640px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow-y:auto}
+.console-replace-options{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px}
+.console-replace-options>button{display:flex;flex-direction:column;align-items:center;gap:12px;padding:24px 16px;text-align:center;white-space:normal;height:auto;min-height:210px}
+.console-replace-options strong{font-size:18px}
+.console-replace-options span,.console-replace-options small{font-size:12px;line-height:1.7;color:var(--muted)}
+.console-replace-files{font-size:12px;line-height:1.8;color:var(--muted);margin:0 18px 18px}
+.console-replace-files summary{cursor:pointer;margin-bottom:8px}
+.console-replace-files div{overflow-wrap:anywhere}

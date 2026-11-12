@@ -1,0 +1,15 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+test-results/
+*.tsbuildinfo
+.private/fonts/
+.private/builtin/
+.build/
+运行程序/
+release/
+.env
+.env.*
+*.pem
+*.key

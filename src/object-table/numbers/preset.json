@@ -1,0 +1,932 @@
+{
+  "base": 10000,
+  "storageBits": 4096,
+  "units": [
+    {
+      "id": "unit-1",
+      "name": "万"
+    },
+    {
+      "id": "unit-2",
+      "name": "亿"
+    },
+    {
+      "id": "unit-3",
+      "name": "兆"
+    },
+    {
+      "id": "unit-4",
+      "name": "京"
+    },
+    {
+      "id": "unit-5",
+      "name": "垓"
+    },
+    {
+      "id": "unit-6",
+      "name": "秭"
+    },
+    {
+      "id": "unit-7",
+      "name": "穰"
+    },
+    {
+      "id": "unit-8",
+      "name": "沟"
+    },
+    {
+      "id": "unit-9",
+      "name": "涧"
+    },
+    {
+      "id": "unit-10",
+      "name": "正"
+    },
+    {
+      "id": "unit-11",
+      "name": "载"
+    },
+    {
+      "id": "unit-12",
+      "name": "极"
+    },
+    {
+      "id": "unit-13",
+      "name": "恒河沙"
+    },
+    {
+      "id": "unit-14",
+      "name": "阿僧祇"
+    },
+    {
+      "id": "unit-15",
+      "name": "那由他"
+    },
+    {
+      "id": "unit-16",
+      "name": "不可思议"
+    },
+    {
+      "id": "unit-17",
+      "name": "无量"
+    },
+    {
+      "id": "unit-18",
+      "name": "大数"
+    },
+    {
+      "id": "unit-19",
+      "name": "古戈尔"
+    },
+    {
+      "id": "unit-20",
+      "name": "轮海"
+    },
+    {
+      "id": "unit-21",
+      "name": "道宫"
+    },
+    {
+      "id": "unit-22",
+      "name": "四极"
+    },
+    {
+      "id": "unit-23",
+      "name": "化龙"
+    },
+    {
+      "id": "unit-24",
+      "name": "仙台一层"
+    },
+    {
+      "id": "unit-25",
+      "name": "仙台二层"
+    },
+    {
+      "id": "unit-26",
+      "name": "仙台三层"
+    },
+    {
+      "id": "unit-27",
+      "name": "仙台四层"
+    },
+    {
+      "id": "unit-28",
+      "name": "仙台五层"
+    },
+    {
+      "id": "unit-29",
+      "name": "仙台六层"
+    },
+    {
+      "id": "unit-30",
+      "name": "仙台七层"
+    },
+    {
+      "id": "unit-31",
+      "name": "仙台八层"
+    },
+    {
+      "id": "unit-32",
+      "name": "仙台九层"
+    },
+    {
+      "id": "unit-33",
+      "name": "仙一"
+    },
+    {
+      "id": "unit-34",
+      "name": "仙二"
+    },
+    {
+      "id": "unit-35",
+      "name": "仙三"
+    },
+    {
+      "id": "unit-36",
+      "name": "仙四"
+    },
+    {
+      "id": "unit-37",
+      "name": "仙五"
+    },
+    {
+      "id": "unit-38",
+      "name": "仙六"
+    },
+    {
+      "id": "unit-39",
+      "name": "仙七"
+    },
+    {
+      "id": "unit-40",
+      "name": "仙八"
+    },
+    {
+      "id": "unit-41",
+      "name": "仙九"
+    },
+    {
+      "id": "unit-42",
+      "name": "斩仙"
+    },
+    {
+      "id": "unit-43",
+      "name": "屠仙"
+    },
+    {
+      "id": "unit-44",
+      "name": "灭仙"
+    },
+    {
+      "id": "unit-45",
+      "name": "仙巅"
+    },
+    {
+      "id": "unit-46",
+      "name": "半帝"
+    },
+    {
+      "id": "unit-47",
+      "name": "准帝一层"
+    },
+    {
+      "id": "unit-48",
+      "name": "准帝二层"
+    },
+    {
+      "id": "unit-49",
+      "name": "准帝三层"
+    },
+    {
+      "id": "unit-50",
+      "name": "准帝四层"
+    },
+    {
+      "id": "unit-51",
+      "name": "准帝五层"
+    },
+    {
+      "id": "unit-52",
+      "name": "准帝六层"
+    },
+    {
+      "id": "unit-53",
+      "name": "准帝七层"
+    },
+    {
+      "id": "unit-54",
+      "name": "准帝八层"
+    },
+    {
+      "id": "unit-55",
+      "name": "准帝九层"
+    },
+    {
+      "id": "unit-56",
+      "name": "大帝一层"
+    },
+    {
+      "id": "unit-57",
+      "name": "大帝二层"
+    },
+    {
+      "id": "unit-58",
+      "name": "大帝三层"
+    },
+    {
+      "id": "unit-59",
+      "name": "大帝四层"
+    },
+    {
+      "id": "unit-60",
+      "name": "大帝五层"
+    },
+    {
+      "id": "unit-61",
+      "name": "大帝六层"
+    },
+    {
+      "id": "unit-62",
+      "name": "大帝七层"
+    },
+    {
+      "id": "unit-63",
+      "name": "大帝八层"
+    },
+    {
+      "id": "unit-64",
+      "name": "大帝九层"
+    },
+    {
+      "id": "unit-65",
+      "name": "帝尊"
+    },
+    {
+      "id": "unit-66",
+      "name": "帝皇"
+    },
+    {
+      "id": "unit-67",
+      "name": "帝祖"
+    },
+    {
+      "id": "unit-68",
+      "name": "帝极"
+    },
+    {
+      "id": "unit-69",
+      "name": "红尘仙一层"
+    },
+    {
+      "id": "unit-70",
+      "name": "红尘仙二层"
+    },
+    {
+      "id": "unit-71",
+      "name": "红尘仙三层"
+    },
+    {
+      "id": "unit-72",
+      "name": "红尘仙四层"
+    },
+    {
+      "id": "unit-73",
+      "name": "红尘仙五层"
+    },
+    {
+      "id": "unit-74",
+      "name": "红尘仙六层"
+    },
+    {
+      "id": "unit-75",
+      "name": "红尘仙七层"
+    },
+    {
+      "id": "unit-76",
+      "name": "红尘仙八层"
+    },
+    {
+      "id": "unit-77",
+      "name": "红尘仙九层"
+    },
+    {
+      "id": "unit-78",
+      "name": "逆伐"
+    },
+    {
+      "id": "unit-79",
+      "name": "斩道"
+    },
+    {
+      "id": "unit-80",
+      "name": "伐道"
+    },
+    {
+      "id": "unit-81",
+      "name": "碎道"
+    },
+    {
+      "id": "unit-82",
+      "name": "破帝"
+    },
+    {
+      "id": "unit-83",
+      "name": "灭道"
+    },
+    {
+      "id": "unit-84",
+      "name": "道胚"
+    },
+    {
+      "id": "unit-85",
+      "name": "道种"
+    },
+    {
+      "id": "unit-86",
+      "name": "道芽"
+    },
+    {
+      "id": "unit-87",
+      "name": "道蕊"
+    },
+    {
+      "id": "unit-88",
+      "name": "道花"
+    },
+    {
+      "id": "unit-89",
+      "name": "道果"
+    },
+    {
+      "id": "unit-90",
+      "name": "道君"
+    },
+    {
+      "id": "unit-91",
+      "name": "道皇"
+    },
+    {
+      "id": "unit-92",
+      "name": "道圣"
+    },
+    {
+      "id": "unit-93",
+      "name": "道神"
+    },
+    {
+      "id": "unit-94",
+      "name": "道祖"
+    },
+    {
+      "id": "unit-95",
+      "name": "元胎"
+    },
+    {
+      "id": "unit-96",
+      "name": "元灵"
+    },
+    {
+      "id": "unit-97",
+      "name": "元王"
+    },
+    {
+      "id": "unit-98",
+      "name": "元皇"
+    },
+    {
+      "id": "unit-99",
+      "name": "元尊"
+    },
+    {
+      "id": "unit-100",
+      "name": "元始"
+    },
+    {
+      "id": "unit-101",
+      "name": "鸿蒙子"
+    },
+    {
+      "id": "unit-102",
+      "name": "鸿蒙灵"
+    },
+    {
+      "id": "unit-103",
+      "name": "鸿蒙王"
+    },
+    {
+      "id": "unit-104",
+      "name": "鸿蒙皇"
+    },
+    {
+      "id": "unit-105",
+      "name": "鸿蒙尊"
+    },
+    {
+      "id": "unit-106",
+      "name": "鸿蒙道"
+    },
+    {
+      "id": "unit-107",
+      "name": "混沌胚"
+    },
+    {
+      "id": "unit-108",
+      "name": "混沌灵"
+    },
+    {
+      "id": "unit-109",
+      "name": "混沌王"
+    },
+    {
+      "id": "unit-110",
+      "name": "混沌皇"
+    },
+    {
+      "id": "unit-111",
+      "name": "混沌尊"
+    },
+    {
+      "id": "unit-112",
+      "name": "混沌道"
+    },
+    {
+      "id": "unit-113",
+      "name": "太虚境"
+    },
+    {
+      "id": "unit-114",
+      "name": "太虚王"
+    },
+    {
+      "id": "unit-115",
+      "name": "太虚皇"
+    },
+    {
+      "id": "unit-116",
+      "name": "太虚尊"
+    },
+    {
+      "id": "unit-117",
+      "name": "太虚道"
+    },
+    {
+      "id": "unit-118",
+      "name": "沧溟境"
+    },
+    {
+      "id": "unit-119",
+      "name": "沧溟王"
+    },
+    {
+      "id": "unit-120",
+      "name": "沧溟皇"
+    },
+    {
+      "id": "unit-121",
+      "name": "沧溟尊"
+    },
+    {
+      "id": "unit-122",
+      "name": "沧溟道"
+    },
+    {
+      "id": "unit-123",
+      "name": "万化境"
+    },
+    {
+      "id": "unit-124",
+      "name": "万化王"
+    },
+    {
+      "id": "unit-125",
+      "name": "万化皇"
+    },
+    {
+      "id": "unit-126",
+      "name": "万化尊"
+    },
+    {
+      "id": "unit-127",
+      "name": "万化道"
+    },
+    {
+      "id": "unit-128",
+      "name": "归藏境"
+    },
+    {
+      "id": "unit-129",
+      "name": "归藏王"
+    },
+    {
+      "id": "unit-130",
+      "name": "归藏皇"
+    },
+    {
+      "id": "unit-131",
+      "name": "归藏尊"
+    },
+    {
+      "id": "unit-132",
+      "name": "归藏道"
+    },
+    {
+      "id": "unit-133",
+      "name": "玄极境"
+    },
+    {
+      "id": "unit-134",
+      "name": "玄极王"
+    },
+    {
+      "id": "unit-135",
+      "name": "玄极皇"
+    },
+    {
+      "id": "unit-136",
+      "name": "玄极尊"
+    },
+    {
+      "id": "unit-137",
+      "name": "玄极道"
+    },
+    {
+      "id": "unit-138",
+      "name": "无妄境"
+    },
+    {
+      "id": "unit-139",
+      "name": "无妄王"
+    },
+    {
+      "id": "unit-140",
+      "name": "无妄皇"
+    },
+    {
+      "id": "unit-141",
+      "name": "无妄尊"
+    },
+    {
+      "id": "unit-142",
+      "name": "无妄道"
+    },
+    {
+      "id": "unit-143",
+      "name": "永寂境"
+    },
+    {
+      "id": "unit-144",
+      "name": "永寂王"
+    },
+    {
+      "id": "unit-145",
+      "name": "永寂皇"
+    },
+    {
+      "id": "unit-146",
+      "name": "永寂尊"
+    },
+    {
+      "id": "unit-147",
+      "name": "永寂道"
+    },
+    {
+      "id": "unit-148",
+      "name": "亘古境"
+    },
+    {
+      "id": "unit-149",
+      "name": "亘古王"
+    },
+    {
+      "id": "unit-150",
+      "name": "亘古皇"
+    },
+    {
+      "id": "unit-151",
+      "name": "亘古尊"
+    },
+    {
+      "id": "unit-152",
+      "name": "亘古道"
+    },
+    {
+      "id": "unit-153",
+      "name": "道外客"
+    },
+    {
+      "id": "unit-154",
+      "name": "界外仙"
+    },
+    {
+      "id": "unit-155",
+      "name": "万道主"
+    },
+    {
+      "id": "unit-156",
+      "name": "诸天尊"
+    },
+    {
+      "id": "unit-157",
+      "name": "万古帝"
+    },
+    {
+      "id": "unit-158",
+      "name": "纪元祖"
+    },
+    {
+      "id": "unit-159",
+      "name": "本源尊"
+    },
+    {
+      "id": "unit-160",
+      "name": "道极祖"
+    },
+    {
+      "id": "unit-161",
+      "name": "一念开天"
+    },
+    {
+      "id": "unit-162",
+      "name": "一念灭世"
+    },
+    {
+      "id": "unit-163",
+      "name": "源初"
+    },
+    {
+      "id": "unit-164",
+      "name": "源寂"
+    },
+    {
+      "id": "unit-165",
+      "name": "道始"
+    },
+    {
+      "id": "unit-166",
+      "name": "道终"
+    },
+    {
+      "id": "unit-167",
+      "name": "无中生有"
+    },
+    {
+      "id": "unit-168",
+      "name": "万道归无"
+    },
+    {
+      "id": "unit-169",
+      "name": "超脱本源"
+    },
+    {
+      "id": "unit-170",
+      "name": "凌驾诸天"
+    },
+    {
+      "id": "unit-171",
+      "name": "道无"
+    },
+    {
+      "id": "unit-172",
+      "name": "道一"
+    },
+    {
+      "id": "unit-173",
+      "name": "宙始"
+    },
+    {
+      "id": "unit-174",
+      "name": "宙寂"
+    },
+    {
+      "id": "unit-175",
+      "name": "元初之主"
+    },
+    {
+      "id": "unit-176",
+      "name": "元终之尊"
+    },
+    {
+      "id": "unit-177",
+      "name": "造化源君"
+    },
+    {
+      "id": "unit-178",
+      "name": "造化寂君"
+    },
+    {
+      "id": "unit-179",
+      "name": "唯一真道"
+    },
+    {
+      "id": "unit-180",
+      "name": "独一真尊"
+    },
+    {
+      "id": "unit-181",
+      "name": "界源始祖"
+    },
+    {
+      "id": "unit-182",
+      "name": "界寂始祖"
+    },
+    {
+      "id": "unit-183",
+      "name": "道海无极"
+    },
+    {
+      "id": "unit-184",
+      "name": "道渊无尽"
+    },
+    {
+      "id": "unit-185",
+      "name": "亘古唯一"
+    },
+    {
+      "id": "unit-186",
+      "name": "万古独存"
+    },
+    {
+      "id": "unit-187",
+      "name": "源道至高"
+    },
+    {
+      "id": "unit-188",
+      "name": "寂道至巅"
+    },
+    {
+      "id": "unit-189",
+      "name": "超道之祖"
+    },
+    {
+      "id": "unit-190",
+      "name": "越界至尊"
+    },
+    {
+      "id": "unit-191",
+      "name": "万道尽头"
+    },
+    {
+      "id": "unit-192",
+      "name": "终极超脱"
+    }
+  ],
+  "registered": [
+    {
+      "attribute": "攻击速度",
+      "unit": "percent"
+    },
+    {
+      "attribute": "攻击间隔",
+      "unit": "number"
+    },
+    {
+      "attribute": "当前生命",
+      "unit": "number"
+    },
+    {
+      "attribute": "生命",
+      "unit": "number"
+    },
+    {
+      "attribute": "当前魔法",
+      "unit": "number"
+    },
+    {
+      "attribute": "魔法上限",
+      "unit": "number"
+    },
+    {
+      "attribute": "攻击",
+      "unit": "number"
+    },
+    {
+      "attribute": "护甲",
+      "unit": "number"
+    },
+    {
+      "attribute": "力量",
+      "unit": "number"
+    },
+    {
+      "attribute": "敏捷",
+      "unit": "number"
+    },
+    {
+      "attribute": "智力",
+      "unit": "number"
+    },
+    {
+      "attribute": "全属",
+      "unit": "number"
+    },
+    {
+      "attribute": "攻击攻击",
+      "unit": "number"
+    },
+    {
+      "attribute": "攻击生命",
+      "unit": "number"
+    },
+    {
+      "attribute": "攻击护甲",
+      "unit": "number"
+    },
+    {
+      "attribute": "攻击全属",
+      "unit": "number"
+    },
+    {
+      "attribute": "金币基础",
+      "unit": "number"
+    },
+    {
+      "attribute": "精气基础",
+      "unit": "number"
+    },
+    {
+      "attribute": "本源基础",
+      "unit": "number"
+    },
+    {
+      "attribute": "地图等级",
+      "unit": "number"
+    },
+    {
+      "attribute": "木桩等级",
+      "unit": "number"
+    },
+    {
+      "attribute": "落地存档",
+      "unit": "number"
+    },
+    {
+      "attribute": "成长倍率",
+      "unit": "percent"
+    },
+    {
+      "attribute": "金币加成",
+      "unit": "percent"
+    },
+    {
+      "attribute": "精气加成",
+      "unit": "percent"
+    },
+    {
+      "attribute": "本源加成",
+      "unit": "percent"
+    },
+    {
+      "attribute": "伤害增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "伤害减免",
+      "unit": "percent"
+    },
+    {
+      "attribute": "经验加成",
+      "unit": "percent"
+    },
+    {
+      "attribute": "攻击攻击增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "攻击生命增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "攻击护甲增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "攻击全属增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "落地攻击攻击增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "落地攻击全属增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "落地攻击生命增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "落地攻击护甲增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "落地伤害增幅",
+      "unit": "percent"
+    },
+    {
+      "attribute": "落地成长加成",
+      "unit": "percent"
+    }
+  ]
+}

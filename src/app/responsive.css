@@ -1,0 +1,342 @@
+.primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.modal > label {
+  margin: 16px 18px;
+}
+.modal > .dialog-actions {
+  padding: 0 18px 18px;
+}
+.export-summary + label {
+  margin: 16px 18px;
+}
+.artboard-background {
+  background: repeating-conic-gradient(#ffffff 0% 25%, #edf0f3 0% 50%) 0 0 /
+    16px 16px;
+}
+.asset-preview {
+  aspect-ratio: 1;
+  height: auto;
+}
+.asset-preview img {
+  object-fit: contain;
+  padding: 5px;
+}
+.category-select > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+input:focus-visible,
+select:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 1px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0ccda;
+  border-radius: 3px;
+}
+@media (max-width: 1300px) {
+  .canvas-toolbar {
+    padding: 0 8px;
+  }
+  .canvas-toolbar .tool-group {
+    gap: 2px;
+  }
+  .canvas-toolbar .icon-button {
+    width: 30px;
+  }
+  .canvas-toolbar .segmented .icon-button {
+    width: 28px;
+  }
+  .canvas-toolbar .toolbar-divider {
+    margin: 0 4px;
+  }
+  .toolbar-import-label {
+    display: none;
+  }
+}
+@media (max-width: 1159px) {
+  body {
+    min-width: 0;
+  }
+  .main-layout {
+    grid-template-columns: 175px minmax(0, 1fr) 240px;
+  }
+  .brand {
+    min-width: 160px;
+  }
+  .layer-body {
+    grid-template-columns: minmax(0, 1fr) 220px;
+  }
+  .canvas-toolbar {
+    padding: 0 7px;
+  }
+}
+@media (max-width: 850px) {
+  .editor-toolbar-row {
+    flex-wrap: wrap;
+  }
+  .editor-toolbar-row .task-create {
+    margin-top: 7px;
+    margin-bottom: 4px;
+  }
+  .editor-toolbar-row .canvas-toolbar {
+    flex-basis: 100%;
+    height: auto;
+    min-height: 88px;
+    gap: 4px;
+    padding: 4px;
+  }
+  .topbar {
+    height: 54px;
+    padding: 0 10px;
+    gap: 9px;
+  }
+  .brand {
+    min-width: 0;
+  }
+  .brand > span:last-child {
+    display: none;
+  }
+  .main-layout {
+    grid-template-columns: 125px minmax(0, 1fr) 180px;
+  }
+  .panel-heading {
+    padding: 0 8px;
+  }
+  .group-toggle {
+    gap: 3px;
+    font-size: 10px;
+  }
+  .category-select {
+    gap: 4px;
+    font-size: 9px;
+  }
+  .category-select small {
+    display: none;
+  }
+  .category-actions {
+    position: absolute;
+    right: 2px;
+    background: var(--panel);
+  }
+  .group-row {
+    position: relative;
+  }
+  .canvas-toolbar {
+    height: 83px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .layer-panel {
+    height: 245px;
+  }
+  .layer-body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .layer-list {
+    min-height: 75px;
+  }
+  .properties {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 7px;
+  }
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .canvas-area {
+    min-height: 100px;
+  }
+  .asset-grid {
+    gap: 5px;
+  }
+  .asset-meta .icon-button {
+    width: 18px;
+    flex: none;
+  }
+  .asset-meta > span {
+    font-size: 8px;
+  }
+  .top-divider {
+    display: none;
+  }
+  .editor-status {
+    padding: 0 5px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 550px) {
+  .topbar {
+    gap: 4px;
+    padding: 0 4px;
+  }
+  .brand-logo {
+    width: 25px;
+    height: 25px;
+  }
+  .top-actions {
+    gap: 1px;
+  }
+  .top-actions .icon-button {
+    width: 24px;
+  }
+  .top-actions .text-button {
+    font-size: 0;
+    padding: 0 6px;
+    gap: 0;
+  }
+  .top-actions .primary {
+    font-size: 9px;
+    padding: 0 6px;
+  }
+  .main-layout {
+    grid-template-columns: 86px minmax(0, 1fr) 112px;
+  }
+  .panel-heading {
+    height: 49px;
+    padding: 0 4px;
+  }
+  .panel-heading h2 {
+    font-size: 10px;
+  }
+  .panel-subtitle {
+    font-size: 8px;
+  }
+  .panel-heading .icon-button {
+    width: 22px;
+  }
+  .category-scroll {
+    padding: 4px 2px;
+  }
+  .category-select img {
+    width: 17px;
+    height: 17px;
+  }
+  .category-select {
+    padding: 0 2px;
+    gap: 3px;
+    font-size: 8px;
+  }
+  .group-toggle {
+    font-size: 8px;
+    padding: 0 2px;
+    gap: 2px;
+  }
+  .group-toggle svg:nth-child(2) {
+    display: none;
+  }
+  .group-toggle svg {
+    width: 10px;
+  }
+  .category-footer,
+  .asset-footer {
+    padding: 4px;
+  }
+  .secondary {
+    font-size: 8px;
+    gap: 3px;
+  }
+  .secondary svg {
+    width: 11px;
+  }
+  .asset-search {
+    margin: 6px 3px;
+    padding: 0 3px;
+    gap: 3px;
+  }
+  .asset-toolbar { margin: 6px 3px; gap: 3px; }
+  .asset-sort-select { flex-basis: 86px; width: 86px; }
+  .asset-sort-select .theme-select > button { min-height: 30px; padding: 3px; font-size: 9px; }
+  .asset-search svg {
+    width: 11px;
+  }
+  .asset-scroll {
+    padding: 0 3px;
+  }
+  .asset-card {
+    padding: 3px;
+  }
+  .asset-grid {
+    gap: 3px;
+  }
+  .asset-meta {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .asset-meta > span {
+    flex-basis: 100%;
+  }
+  .asset-meta .icon-button {
+    height: 16px;
+  }
+  .layer-heading {
+    padding: 0 4px;
+  }
+  .layer-heading h2 {
+    font-size: 10px;
+    gap: 3px;
+  }
+  .layer-heading .icon-button {
+    width: 20px;
+  }
+  .layer-select {
+    gap: 3px;
+    font-size: 8px;
+  }
+  .layer-select small {
+    display: none;
+  }
+  .layer-row > .icon-button {
+    width: 18px;
+  }
+  .layer-row > .layer-drag-handle {
+    display: none;
+  }
+  .numeric-field input {
+    width: 40px;
+  }
+  .numeric-field {
+    font-size: 8px;
+    gap: 2px;
+  }
+  .status-hint,
+  .status-divider {
+    display: none;
+  }
+  .canvas-empty {
+    width: 110px;
+    height: 98px;
+    font-size: 10px;
+  }
+  .canvas-toolbar .toolbar-divider {
+    margin: 0 3px;
+  }
+  .canvas-toolbar .icon-button {
+    width: 23px;
+  }
+  .canvas-toolbar .segmented .icon-button {
+    width: 23px;
+  }
+  .canvas-toolbar .tool-group {
+    gap: 1px;
+  }
+  .canvas-toolbar .zoom-value {
+    min-width: 26px;
+  }
+  .canvas-toolbar .toolbar-divider {
+    margin: 0 1px;
+  }
+}

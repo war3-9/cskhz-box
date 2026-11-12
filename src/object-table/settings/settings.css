@@ -1,0 +1,16 @@
+.ot-settings { width:min(470px,92vw); }
+.ot-settings section { padding:0 18px 16px; }
+.ot-settings label.ot-setting-switch,.ot-settings label.ot-setting-interval { display:flex; }
+.ot-settings section+section { border-top:1px solid var(--line); margin-top:16px; padding-top:6px; }
+.ot-settings h3 { font-size:13px; margin:12px 0; }
+.ot-settings p,.ot-setting-switch small { font-size:12px; color:var(--muted); line-height:1.65; }
+.ot-setting-switch { display:flex; align-items:center; justify-content:space-between; gap:18px; }
+.ot-setting-switch small { display:block; margin-top:5px; }
+.ot-settings .ot-setting-switch input { width:17px; height:17px; flex:none; margin:0; accent-color:#118b78; }
+.ot-setting-interval { display:flex; align-items:center; justify-content:space-between; margin-top:16px; }
+.ot-settings .ot-setting-interval select { width:130px; margin:0; padding:6px 10px; border:1px solid var(--line); border-radius:5px; background:var(--surface-soft); color:var(--text); }
+.ot-setting-status { margin:12px 0; font-size:12px; color:var(--muted); }
+.ot-settings-tabs { display:flex; gap:6px; padding:0 18px 10px; border-bottom:1px solid var(--line); }
+.ot-settings-tabs button { padding:8px 14px; border:1px solid transparent; border-radius:5px; background:transparent; color:var(--muted); }
+.ot-settings-tabs button[aria-selected="true"] { background:var(--surface-soft); border-color:var(--line); color:var(--text); }
+.ot-settings .ot-setting-switch+.ot-setting-switch { margin-top:20px; }

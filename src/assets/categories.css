@@ -1,0 +1,136 @@
+.category-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: 12px 10px;
+}
+.section-label {
+  padding: 12px 9px 6px;
+  color: var(--muted-2);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 11px;
+}
+.group-row {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+.group-row.active {
+  background: var(--accent-soft);
+  box-shadow: inset 3px 0 var(--accent);
+  border-radius: 5px;
+}
+.group-row.active .group-toggle {
+  color: var(--accent-strong);
+}
+.category-shortcuts {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.template-nav {
+  width: 100%;
+  min-height: 40px;
+  border-radius: 5px;
+}
+.template-nav.active {
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  box-shadow: inset 3px 0 var(--accent);
+}
+.template-nav > .lucide {
+  color: #5277ad;
+}
+.group-toggle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 10px;
+  background: transparent;
+  color: var(--text-secondary);
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+.group-toggle > .lucide {
+  color: #5277ad;
+}
+.group-toggle:hover {
+  color: var(--accent);
+}
+.category-actions {
+  display: flex;
+  opacity: 0;
+  transition: 0.12s;
+}
+.group-row:hover .category-actions {
+  opacity: 1;
+}
+.category-actions .icon-button {
+  width: 23px;
+  height: 23px;
+}
+.category-actions .icon-button > .lucide {
+  width: 15px;
+  height: 15px;
+}
+.category-select {
+  min-width: 0;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 6px;
+  background: transparent;
+  color: var(--text-secondary);
+  text-align: left;
+  font-size: 13px;
+}
+.category-select img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 5px;
+  background: var(--surface-soft);
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+}
+.category-select small {
+  margin-left: auto;
+  color: var(--muted-2);
+  font-size: 11px;
+}
+.category-footer,
+.asset-footer {
+  padding: 11px;
+  border-top: 1px solid var(--line);
+}
+.full-width {
+  width: 100%;
+  justify-content: center;
+}
+.secondary {
+  height: 38px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--text-secondary);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.category-footer span {
+  display: block;
+  text-align: center;
+  color: var(--muted-2);
+  font-size: 11px;
+  margin-top: 9px;
+}

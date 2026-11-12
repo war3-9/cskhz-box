@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'BoxYouShe';
+  src: url('../../素材/字体/优设.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+.home-page :is(h1, h2, h3), .home-entry-label, .topbar-home .brand {
+  font-family: 'BoxYouShe', 'Microsoft YaHei', sans-serif;
+}

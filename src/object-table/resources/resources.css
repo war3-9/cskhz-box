@@ -1,0 +1,20 @@
+.ot-resource-dialog { width: min(660px,calc(100vw - 32px)); max-width: calc(100vw - 32px); max-height: calc(100vh - 40px); overflow: auto; border: 1px solid var(--border,#6b7280); border-radius: 10px; padding: 18px; background: var(--panel,#292d34); color: var(--text,#eee); }
+.ot-resource-dialog.is-expanded { width: min(1240px,calc(100vw - 32px)); }
+.ot-resource-dialog::backdrop { background: #0008; }
+.ot-resource-dialog header,.ot-resource-dialog footer,.ot-resource-tools,.ot-resource-pages { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.ot-resource-dialog header h2 { flex: 1; margin: 0; font-size: 19px; }
+.ot-resource-dialog button,.ot-resource-dialog input,.ot-resource-dialog select { border: 1px solid var(--border,#777); border-radius: 5px; padding: 6px 8px; background: var(--panel,#292d34); color: inherit; }
+.ot-resource-dialog button { cursor: pointer; }.ot-resource-dialog button:disabled { opacity: .5; cursor: default; }
+.ot-resource-dialog input:focus,.ot-resource-dialog button:focus-visible { outline: 2px solid #6ab6ef; }
+.ot-resource-tools label { display: flex; align-items: center; gap: 5px; flex: 1; }.ot-resource-tools label input { flex: 1; min-width: 150px; }
+.ot-resource-body { margin-top: 12px; display: grid; grid-template-columns: minmax(300px,1fr) minmax(220px,280px); gap: 12px; }
+.ot-resource-body:has(.ot-resource-model) { grid-template-columns: minmax(300px,1fr) minmax(220px,300px) minmax(200px,260px); }
+.ot-resource-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; }
+.ot-resource-card { padding: 6px; border: 1px solid var(--border,#777); border-radius: 6px; min-width: 0; }.ot-resource-card.is-selected { border-color: #5fa9ff; background: #5599ee22; }
+.ot-resource-card>button { display: grid; place-items: center; width: 100%; height: 104px; overflow: hidden; padding: 0; }.ot-resource-card img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.ot-resource-card canvas { display: block; width: 100%; height: 100%; min-height: 0; touch-action: none; cursor: grab; }.ot-resource-card canvas:active,.ot-resource-model canvas:active { cursor: grabbing; }
+.ot-resource-card label { display: block; overflow-wrap: anywhere; font-size: 11px; }.ot-resource-card small { display: block; font-size: 10px; }
+.ot-resource-selected { max-height: 480px; overflow: auto; }.ot-resource-selected>div { margin: 8px 0; padding-bottom: 6px; border-bottom: 1px solid var(--border,#777); font-size: 11px; }.ot-resource-selected span { display: block; overflow-wrap: anywhere; }
+.ot-resource-model { min-width: 0; }.ot-resource-model strong,.ot-resource-model small { display: block; overflow-wrap: anywhere; font-size: 11px; }.ot-resource-model canvas { width: 100%; height: 260px; background: #20252b; touch-action: none; }
+.ot-resource-pages { justify-content: center; margin-top: 10px; }.ot-resource-dialog footer { margin-top: 14px; }.ot-resource-dialog footer span { flex: 1; }.ot-resource-error { color: #db7053; }
+@media(max-width:850px) { .ot-resource-body,.ot-resource-body:has(.ot-resource-model) { grid-template-columns: 1fr; }.ot-resource-selected { max-height: 150px; } }
