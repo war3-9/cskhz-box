@@ -33,7 +33,7 @@ export function HomePage({
         <div className="home-brand">
           <img className="home-brand-logo" src={brandLogo} alt="软件图标" />
         </div>
-        <h1 className="home-title">超时空盒子 免费版</h1>
+        <h1 className="home-title">超时空盒子 开源版</h1>
         <UsageLicense />
         <div className="home-entry-slot">
           <div className="home-function-view home-function-view-visible">

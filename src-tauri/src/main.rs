@@ -223,7 +223,7 @@ fn main() {
             }
         })
         .run(desktop_lifecycle::context())
-        .expect("启动超时空盒子源码公开免费版失败");
+        .expect("启动超时空盒子开源版失败");
 }
 
 fn uuid_like(path: &Path) -> String {

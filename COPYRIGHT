@@ -1,0 +1,22 @@
+Copyright (C) 2026 war3-9
+SPDX-License-Identifier: AGPL-3.0-only
+
+This notice applies to the first-party code in release 1.1.2 and later
+releases that explicitly adopt this license. Third-party code and assets
+retain their respective licenses and notices; see third_party/README.md.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, version 3 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Corresponding Source for release 1.1.2:
+https://github.com/war3-9/cskhz-box/tree/v1.1.2-agpl.1
+Build and installation instructions are provided in README.md.
